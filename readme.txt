@@ -8,15 +8,8 @@ Also it contains questions from some of algorithm books. (Most of them from Sout
 또한 주로 한국의 알고리즘 교재들의 문제들도 포함되어 있습니다.
 
 - 목차
-
-<html>
-<details>
-<summary> 수학 </summary>
-<div markdown="1">
-<https://github.com/JerryAllMighty/AlgorithmAndDataStructures/wiki/%EC%88%98%ED%95%99---%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4>
-</div>
-</details>
-<html>
+- 수학
+  - [에라토스테네스의 체] (https://github.com/JerryAllMighty/AlgorithmAndDataStructures/wiki/%EC%88%98%ED%95%99---%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4)
 자료구조 (배열, 연결리스트, 스택, 큐, 덱)
 재귀
 정렬
