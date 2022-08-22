@@ -6,3 +6,8 @@ Also it contains questions from some of algorithm books. (Most of them from Sout
 누군가에게는 도움이 되기를 바랍니다.
 백준, 리트코드, 프로그래머스 등이 있습니다.
 또한 주로 한국의 알고리즘 교재들의 문제들도 포함되어 있습니다.
+
+
+
+#1 참조 링크
+[https://dev-dain.tistory.com/155] (https://dev-dain.tistory.com/155)
