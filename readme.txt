@@ -10,4 +10,4 @@ Also it contains questions from some of algorithm books. (Most of them from Sout
 
 
 #1 참조 링크
-[https://dev-dain.tistory.com/155] (https://dev-dain.tistory.com/155)
+<https://dev-dain.tistory.com/155>
