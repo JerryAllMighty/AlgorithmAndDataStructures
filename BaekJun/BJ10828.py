@@ -14,14 +14,14 @@ class Stack():
         self.st.append(number)
 
     def pop(self):
-        length = len(self.st)
-        if length > 0:
-            lastNum =  self.st[length-1]
-            del self.st[length-1]
-            return lastNum
+        lastValue = self.top()
+        if lastValue != -1:
+            lastValueBeforeRemoval =  self.st[len(self.st)-1]
+            del self.st[len(self.st)-1]
+            return lastValueBeforeRemoval
         else:
-            return -1
-
+            return lastValue
+            
     def size(self):
         return len(self.st)
 
@@ -35,7 +35,7 @@ class Stack():
     def top(self):
         length = len(self.st)
         if length > 0:
-            return self.st[length-1]
+            return int(self.st[length-1])
         else:
             return -1
 
