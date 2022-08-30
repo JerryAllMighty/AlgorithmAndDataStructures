@@ -3,7 +3,7 @@
 
 from collections import deque
 import sys
-read = sys.stdin.readline()
+read = sys.stdin.readline
 
 def bfs(v):
   q = deque()
