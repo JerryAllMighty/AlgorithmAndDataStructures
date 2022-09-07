@@ -11,5 +11,5 @@ for _ in range(cnt):
     if each[i] > avg:
       over += 1
   
-  print(f"{((over/(len(each)-1))*100):.3f}")
+  print(f"{((over/(len(each)-1))*100):.3f}"+"%")
 
