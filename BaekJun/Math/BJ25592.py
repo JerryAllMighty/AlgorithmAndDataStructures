@@ -5,11 +5,21 @@ cnt  = int(input())
 
 
 idx = 1
+win = False
 
 while True:
     cnt -= idx
+    if win == False:
+        win = True
+    else:
+        win = False
+
+    
     if cnt <= 0:
         break
     idx += 1
 
-print(abs(cnt))
+if win == True:
+    print(abs(cnt))
+else:
+    print(0)
