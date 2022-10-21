@@ -1,35 +1,17 @@
 cnt  = int(input())
-target = int(input())
+answers = []
+for _ in range(cnt):
+    target = int(input())
+    binaryNum = format(target, 'b')
+    answer = []
+    for idx, val in enumerate(binaryNum[::-1]):
+        if val =='1':
+            answer.append(str(idx))
 
-# idx = 0
-# answer = ''
+    answers.append(answer)
 
-# while True:
-#     mok = target //2
-#     nmg = target % 2
 
-#     target = mok
-
-#     if nmg == 1:
-#         answer += str(idx) + ' '
-
-#     if target == 1:
-#         if mok == 1:
-#             answer += str(idx+1) + ' '
-#         break
-
-#     idx += 1
-
-# print(answer[:-1])
-
-binaryNum = format(target, 'b')
-print(binaryNum)
-# binaryNum = [i for i in reversed(binaryNum)]
-for idx, val in enumerate(binaryNum[::-1]):
-    if val =='1':
-        print(idx, end=' ')
-
-        # if i != len(binaryNum)-1:
-        #     answer += ' '
+for p in answers:
+    print(' '.join(p))
 
 
