@@ -1,34 +1,20 @@
-cnt = int(input())
+import sys
+cnt = int(sys.stdin.readline().rstrip())
 
-str = ['A']
-for _ in range(1000000):
-  str.append('0')
-  
-  
-for i in range(cnt):
-  
-  idx = 0
-  
-  target = str[idx]
-  while target != '0':
-    if target == 'A':
-      str[idx] = 'B'
-      idx +=1
-    else:
-      str.insert(idx+1, 'A')
-      idx += 2
-    target = str[idx]
-    
-a = 0
-b = 0
+# A, B, BA, BAB, BABBA,BABBABAB, BABBABABBABBA
+# 1 0, 0 1, 1 1, 1 2, 2 3, 3 5, 5 8
+# 피보나치 수열의 규칙을 발견하는 것이 관건
+# DP
+aList = [1, 0]
+bList = [0, 1]
 
-for i in str:
-  if i == 'A':
-    a +=1
-  elif i == 'B':
-    b +=1
-  else:
-    break
+for i in range(2, cnt+1):  
+  a = aList[i-1]  + aList[i-2]
+  b = bList[i-1]  + bList[i-2]
+
+  aList.append(a)
+  bList.append(b)
   
-print(a, b)
+print(aList[cnt], bList[cnt])
+  
   
