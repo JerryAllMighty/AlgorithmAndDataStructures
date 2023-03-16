@@ -19,6 +19,8 @@ Also it contains questions from some of algorithm books. (Most of them from Sout
 다이나믹 프로그래밍
 DFS, BFS
 최단경로
+  플로이드 알고리즘
+  다익스트라 알고리즘
 이분탐색
 우선 순위 큐
 그래프
@@ -30,8 +32,6 @@ DFS, BFS
 투포인터, 슬라이딩 윈도우
 위상정렬
 최소신장트리
-플로이드 알고리즘
-다익스트라 알고리즘
 KMP 알고리즘
 트라이
 분할정복
