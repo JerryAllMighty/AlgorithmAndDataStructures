@@ -1,31 +1,10 @@
-import collections
+import sys
+input = sys.stdin.readline
 
-
-cnt = int(input())
-
-lst = collections.deque([])
-
-for _ in range(cnt):
-    num = int(input())
-    if len(lst) != 0:
-        idx = len(lst)-1
-        if lst[idx] <= num:
-            lst.append(num)
-        else:
-            if idx == 0:
-                lst.insert(0, num)
-            else:
-                while idx != 0:
-                    idx -= 1
-                    if lst[idx] <= num:
-                        lst.insert(idx, num)
-
-            
-
-    else:
-        lst.append(num)
-
-
-for i in lst:
-    print(i)
-
+N = int(input())
+ls = [0] * 10001
+for i in range(N):
+    ls[int(input())] += 1
+for i in range(10001):
+    for n in range(ls[i]):
+        print(i)
