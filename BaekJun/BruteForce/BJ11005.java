@@ -13,23 +13,25 @@ public class BJ11005{
 
     String answer = "";
 
-    final int changeOverTen(int targetNum){
-      int ans = 0;
-      if(targetNum > 10){
-        Char ch = (char)targetNum;
-      }
-      return ans;
-    }
     
     while (true){
       String cur = "";
-      cur += num % jb;
-
-      answer = cur + answer;
+      cur = num % jb;
+      if(cur > 10){
+        answer = (char)(cur + 87) + answer;
+      }else{
+        answer = cur + answer;
+      }
+      
       num = num / jb;
 
       if (num < jb){
-        answer = num + answer;
+        if(num > 10){
+          answer = (char)(num + 87) + answer;
+        }else{
+          answer = num + answer;
+        }
+        
         break;
       }
     }
