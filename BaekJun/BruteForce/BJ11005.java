@@ -1,3 +1,4 @@
+
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
@@ -14,28 +15,24 @@ public class BJ11005{
     String answer = "";
 
     
-    while (true){
-      String cur = "";
+    while (num >= jb){
+      int cur = -1;
       cur = num % jb;
-      if(cur > 10){
-        answer = (char)(cur + 87) + answer;
+      num = num / jb;
+      if(cur >= 10){
+        answer = (char)(cur + 55) + answer;
       }else{
         answer = cur + answer;
       }
       
-      num = num / jb;
-
-      if (num < jb){
-        if(num > 10){
-          answer = (char)(num + 87) + answer;
-        }else{
-          answer = num + answer;
-        }
-        
-        break;
-      }
+      
     }
-      System.out.println(answer);
+    if(num % jb >= 10){
+      answer = (char)(num % jb + 55) + answer;
+    }else{
+      answer = num % jb + answer;
+    }
+    System.out.println(answer);
 
 
 
