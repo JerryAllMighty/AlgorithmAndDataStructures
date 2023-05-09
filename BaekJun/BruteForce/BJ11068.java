@@ -2,27 +2,31 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BJ11068{
+  static Boolean isPalindrome(final int n, final int j){ 
+    int targetNum = n;
+    String jbNum = String.valueOf(targetNum);
+    while(targetNum >= j){
+      int nmg = targetNum %j;
+      jbNum = String.valueOf(nmg) + jbNum;
+      targetNum = targetNum/j;
+
+    }
+    jbNum = String.valueOf(targetNum) + jbNum;
+
+
+    String cmp = "";
+    for(int i =jbNum.length()-1; i >= 0; i--){
+      cmp += jbNum.charAt(i);
+
+    }
+
+    return jbNum.equals(cmp) ? true:false;
+}
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int cnt = sc.nextInt();
     int[] answers = new int[cnt];
-
-    private Boolean isPalindrome(int num, int jb){ 
-        String jbNum = "";
-        while(num >= jb){
-          int nmg = num %jb;
-          jbNum = String.valueOf(nmg) + jbNum;
-          num = num/jb;
-
-        }
-        String cmp = "";
-        for(int i =jbNum.length()-1; i >= 0; i--){
-          cmp += jbNum[i];
-
-        }
-
-        return jbNum.equals(cmp) ? true:false;
-    }
 
 
     for(int i = 0; i< cnt; i++){
