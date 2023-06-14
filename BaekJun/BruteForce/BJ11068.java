@@ -26,8 +26,13 @@ public class BJ11068{
 
   private static int isPalindrome(int num, int jb) {
 int result = 0;
+int nmg = 0;
 // to change into jb Nums
-while(True){
+while(1 == 1){
+  nmg = num % jb;
+  
+num = num / jb;
+
 
 }
 //to check whether it is a pelindrome
