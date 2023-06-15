@@ -27,21 +27,29 @@ public class BJ11068{
   private static int isPalindrome(int num, int jb) {
 int result = 0;
 int nmg = 0;
+String targetNum = "";
+
 // to change into jb Nums
-while(1 == 1){
+while(true){
   nmg = num % jb;
-  
-num = num / jb;
+  num = num / jb;
+  targetNum = nmg + targetNum;
+  if(num < jb){
+    targetNum = num + targetNum;
+    break;
+  }
 
 
 }
 //to check whether it is a pelindrome
-String targetNum = Integer.toString(num);
 String reverseNum = "";
 for(int i = targetNum.length() -1; i >= 0;i--){
 reverseNum += targetNum.substring(i, i+1);
 }
 // targetNum.substring(targetNum.length() -1, 0);
+if(reverseNum == targetNum){
+  result = 1;
+}
 return result;
   }
 
