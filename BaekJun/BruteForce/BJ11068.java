@@ -33,7 +33,12 @@ String targetNum = "";
 while(true){
   nmg = num % jb;
   num = num / jb;
-  targetNum = nmg + targetNum;
+  if(jb >= 10 && nmg >= 10){
+    targetNum = (nmg+97)+ targetNum;
+  }else{
+    targetNum = nmg + targetNum;
+  }
+  
   if(num < jb){
     targetNum = num + targetNum;
     break;
