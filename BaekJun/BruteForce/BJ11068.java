@@ -1,61 +1,23 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+def is_palindrome(x, base):
+    digit = []
+    while x > 0:
+        digit.append(x % base)
+        x //= base
 
-public class BJ11068{
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int cnt = sc.nextInt();
+    for i in range(len(digit) // 2):
+        if digit[i] != digit[-i - 1]:
+            return 0
+    return 1
 
-    for(int i = 0; i < cnt; i++){
-      int num = sc.nextInt();
-      int jb = 2;
-      int result = 0;
-      while (jb <= 64){
-      //check whether it is a pelindrome or not, in each jb
-      result = isPalindrome(num, jb);
-      if(result == 1){
-      break;
-      }else{
-        jb += 1;}
-      }
-    System.out.println(result);
-    }
+T = int(input())
 
-    sc.close();
-  }
+for _ in range(T):
+    X = int(input())
+    ans = 0
 
-  private static int isPalindrome(int num, int jb) {
-int result = 0;
-int nmg = 0;
-String targetNum = "";
+    for i in range(2, 65):
+        ans = is_palindrome(X, i)
+        if ans:
+            break
 
-// to change into jb Nums
-while(true){
-  nmg = num % jb;
-  num = num / jb;
-  if(jb >= 10 && nmg >= 10){
-    targetNum = (nmg+97)+ targetNum;
-  }else{
-    targetNum = nmg + targetNum;
-  }
-  
-  if(num < jb){
-    targetNum = num + targetNum;
-    break;
-  }
-
-
-}
-//to check whether it is a pelindrome
-String reverseNum = "";
-for(int i = targetNum.length() -1; i >= 0;i--){
-reverseNum += targetNum.substring(i, i+1);
-}
-// targetNum.substring(targetNum.length() -1, 0);
-if(reverseNum == targetNum){
-  result = 1;
-}
-return result;
-  }
-
-}
+    print(ans)
