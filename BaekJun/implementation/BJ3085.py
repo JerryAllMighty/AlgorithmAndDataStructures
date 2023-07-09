@@ -1,49 +1,66 @@
-cnt = map(int, input())
-targets = []
+N = int(input())
+board = [list(input()) + [0] for _ in range(N)]
+board.append([0] * (N + 1))
+res = 1
 
-for _ in range(cnt):
-    row = list(input())
-    targets.append(row)
+def calc_col_score(col):
+    global res
 
-for row in range(cnt):
-    for col in range(cnt):
-        # we choose 2 with different colors
-
-        # row and row
-        if col != cnt - 1 and targets[row][col] != targets[row][col+1]:
-            targets[row][col], targets[row][col+1] = targets[row][col+1], targets[row][col]
-        # row and column
-        if row != cnt-1 and targets[row][col] != targets[row+1][col]:
-            targets[row][col], targets[row + 1][col] = targets[row+1][col], targets[row][col]
-
-# find the longest consecutive
-answer = 0
-
-longestRowList = []
-longestColList = []
-
-for row in range(cnt):
-    longestRow = 0
-    for col in range(cnt):
-        longestCol = 0
-
-        # find the longest row
-        if col != cnt-1 and targets[row][col] == targets[row][col+1]:
-            longestRow += 1
+    if col >= N:
+        return
+    
+    max_score = 1
+    tmp = 1
+    color = board[0][col]
+    for i in range(1, N):
+        if board[i][col] != color:
+            max_score = max(max_score, tmp)
+            tmp = 1
+            color = board[i][col]
         else:
-            longestRowList.append(longestRow)
-            longestRow = 0
+            tmp += 1
+    res = max(res, max(max_score, tmp))
 
-        # find the longest col
-        if row != cnt - 1 and targets[row][col] == targets[row+1][col]:
-            longestCol += 1
+def calc_row_score(row):
+    global res
+
+    if row >= N:
+        return
+
+    max_score = 1
+    tmp = 1
+    color = board[row][0]
+    for i in range(1, N):
+        if board[row][i] != color:
+            max_score = max(max_score, tmp)
+            tmp = 1
+            color = board[row][i]
         else:
-            longestColList.append(longestCol)
-            longestCol = 0
+            tmp += 1
+    res = max(res, max(max_score, tmp))
 
+def swap_candy(row, col):
+    color = board[row][col]
 
+    if color != board[row + 1][col]:
+        board[row][col], board[row + 1][col] = board[row + 1][col], board[row][col]
+        calc_row_score(row)
+        calc_row_score(row + 1)
+        calc_col_score(col)
+        board[row][col], board[row + 1][col] = board[row + 1][col], board[row][col]
+    if color != board[row][col + 1]:
+        board[row][col], board[row][col + 1] = board[row][col + 1], board[row][col]
+        calc_col_score(col)
+        calc_col_score(col + 1)
+        calc_row_score(row)
+        board[row][col], board[row][col + 1] = board[row][col + 1], board[row][col]
 
-print(max(longestRowList), max(longestColList))
+for i in range(N):
+    calc_row_score(i)
+    calc_col_score(i)
 
+for i in range(N):
+    for j in range(N):
+        swap_candy(i, j)
 
-
+print(res)
