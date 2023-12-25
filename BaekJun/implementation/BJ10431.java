@@ -1,7 +1,8 @@
-import java.util.ArrayList;
+package BaekJun.implementation;
+
 import java.util.Scanner;
 
-class Main
+class BJ10431
 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
