@@ -1,7 +1,11 @@
+package BaekJun.BruteForce;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
-class Main
+class BJ2309
 {
     public static void sort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -44,3 +48,42 @@ class Main
                 System.out.println(h[i]);
     }
 }
+
+//2023.01.02
+//public static void main(String[] args) {
+//    Scanner sc = new Scanner(System.in);
+//    ArrayList<Integer> given = new ArrayList<>();
+//
+//    for (int i = 0; i < 9; i++) {
+//        int num = sc.nextInt();
+//        given.add(num);
+//    }
+//    Collections.sort(given);
+//
+//    for (int i = 0; i < 9; i++) {
+//        ArrayList<Integer> answers = new ArrayList<>();
+//        int current = given.get(i);
+//        answers.add(current);
+//        for (int j = i + 1; j < 9; j++) {
+//            if (current + given.get(j) < 100) {
+//                answers.add(given.get(j));
+//                current += given.get(j);
+//            } else if (current + given.get(j) > 100) {
+//                answers.remove(given.get(j-1));
+//                current -= given.get(j-1);
+//
+//            } else {
+//                if (answers.size() == 7) {
+//                    answers.forEach(x -> System.out.println(x.intValue()));
+//                    return;
+//                } else {
+//                    break;
+//                }
+//
+//            }
+//        }
+//    }
+//
+//
+//    sc.close();
+//}
