@@ -39,3 +39,32 @@ while True:
 
 
 print(best)
+
+
+# 2024.02.06 Brute Force 다시 풀기
+# Scanner sc = new Scanner(System.in);
+#         String[] given = sc.nextLine().split(" ");
+#         String[] nums = sc.nextLine().split(" ");
+#
+#         int cnt = Integer.parseInt(given[0]);
+#         int limit = Integer.parseInt(given[1]);
+#
+#         Arrays.sort(given, Collections.reverseOrder());
+#
+#         int answer = 0;
+#
+#         for (int i = cnt - 1; i >= 2; i--) {
+#             for (int k = i - 1; k >= 1; k--) {
+#                 int currentSum = Integer.parseInt(nums[i]) + Integer.parseInt(nums[k]);
+#                 for (int j = i - 2; j >= 0; j--) {
+#                     int toAdd = Integer.parseInt(nums[j]);
+#                     if (currentSum + toAdd <= limit) {
+#                         if (currentSum + toAdd > answer) {
+#                             answer = currentSum + toAdd;
+#                         }
+#                     }
+#                 }
+#             }
+#         }
+#         System.out.println(answer);
+#         sc.close();
