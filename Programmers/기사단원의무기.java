@@ -9,7 +9,6 @@ public class 기사단원의무기 {
     void preprocess(int num) {
         cntYaksu = new int[num + 1];
         cntYaksu[0] = 0;
-        System.out.println("a");
         for (int i = 1; i <= num; i++) {
             cntYaksu[i] = cntYaksu(i);
         }
@@ -18,12 +17,16 @@ public class 기사단원의무기 {
     int cntYaksu(int num) {
         int answer = 0;
 
-        for (int i = 1; i <= num; i++) {
+        //제곱근까지의 수만 약수의 개수를 구한다.
+        for (int i = 1; i * i <= num; i++) {
             if (num % i == 0) {
+                answer += 2;
+            }else if ((i*i) == num) {
                 answer++;
             }
         }
 
+        //마지막 제곱급은 중복되므로 빼준다.
         return answer;
 
     }
@@ -46,6 +49,8 @@ public class 기사단원의무기 {
 
         return answer;
     }
+
+
 }
 
 
