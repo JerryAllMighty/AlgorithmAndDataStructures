@@ -1,25 +1,19 @@
-
-n, m = map(int, input().split(' '))
-givenList =  list(map(int, input().split(' ')))
-visited= []
+import sys
+n,m = map(int, sys.stdin.readline().strip().split(' '))
+givenList = list(map(int, sys.stdin.readline().strip().split(' ')))
 cnt = 0
-answer = '-1'
-for i in reversed(range(n)):
-    maxNum = 1
-    maxIdx = 0
-    for j in range(n):
-        if givenList[j] > maxNum and givenList[j] not in visited:
-            maxNum = givenList[j]
-            maxIdx = j
+answer = -1
+for i in range(n):
+    for j in range(n-1):
+        if givenList[j] > givenList[j+1]:
+            givenList[j], givenList[j + 1] = givenList[j+1], givenList[j]
+            cnt += 1
 
-    if maxIdx != i:
-        givenList[maxIdx], givenList[i] = givenList[i], givenList[maxIdx]
-        cnt +=1
-    visited.append(maxNum)
+        if cnt == m:
+            print(str(givenList[j]) + ' ' + str(givenList[j + 1]))
+            exit(0)
 
-    if cnt == m:
-        answer = ' '.join(map(str, givenList))
-        break
+
 print(answer)
 
 
