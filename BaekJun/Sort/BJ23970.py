@@ -1,25 +1,21 @@
 import sys
-input = sys.stdin.readline
+n = int(sys.stdin.readline().rstrip())
+aList = list(map(int,sys.stdin.readline().split(' ')))
+bList = list(map(int,sys.stdin.readline().split(' ')))
 
-N = int(input())
-A = list(map(int, input().strip().split()))
-B = list(map(int, input().strip().split()))
+answer = -1
+cnt = 0
 
-def bubble_sort(A, B):
-    # 배열의 길이가 n이라면 패스는 (n-1)번 수행됨
-    for i in range(N - 1, 0, -1):
-        for j in range(i):
-            if A[j] > A[j+1]:
-                A[j], A[j+1] = A[j+1], A[j]
-                if A[j+1] == B[j+1]:
-                    if A == B:
-                        print(1)
-                        sys.exit(0)
-    print(0)
-
-# 만약 입력받은 배열 A와 B가 일치한다면?
-if A == B:
+if aList == bList:
     print(1)
-    sys.exit(0)
-else:
-    bubble_sort(A, B)
+    exit(0)
+
+for i in range(n):
+    for j in range(n-1-i):
+        if aList[j] > aList[j+1]:
+            aList[j], aList[j+1] = aList[j+1], aList[j]
+
+        if aList[j] == bList[j] and aList == bList:
+            print(1)
+            exit(0)
+print(0)
