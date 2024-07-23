@@ -16,6 +16,7 @@ Also it contains questions from some of algorithm books. (Most of them from Sout
   - [재귀] (https://github.com/JerryAllMighty/AlgorithmAndDataStructures/wiki/%EC%9E%AC%EA%B7%80)
 정렬
   - [퀵소트] (https://github.com/JerryAllMighty/AlgorithmAndDataStructures/wiki/%ED%80%B5%EC%86%8C%ED%8A%B8)
+  - [버블정렬] (https://github.com/JerryAllMighty/AlgorithmAndDataStructures/wiki/%EC%84%A0%ED%83%9D-%EC%A0%95%EB%A0%AC)
 다이나믹 프로그래밍
 DFS, BFS
 최단경로
