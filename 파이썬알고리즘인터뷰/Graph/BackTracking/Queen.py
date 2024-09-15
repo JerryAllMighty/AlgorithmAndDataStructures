@@ -17,11 +17,11 @@ def solveNQueens(n: int):
             grid = [['.'] * n for _ in range(n)]
             for idx, value in enumerate(visited):
                 grid[idx][value] = 'Q'
-            result = []
+            days = []
             for row in grid:
                 print(row)
-                result.append(''.join(row))
-            answers.append(result)
+                days.append(''.join(row))
+            answers.append(days)
             return
 
         for col in range(n):

@@ -22,8 +22,8 @@ def solution(lst, n,k):
             return True
         else:
             return False
-    result = ss(lst, cur_time, k)
-    if result:
+    days = ss(lst, cur_time, k)
+    if days:
         return cur_time
     else:
         return -1

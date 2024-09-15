@@ -6,14 +6,14 @@ def letterCombination(num):
     for i in num:
         possible.append(letters[int(i) - 2])
 
-    def getCombination(lst, idx1,idx2, result):
+    def getCombination(lst, idx1,idx2, days):
         if idx1 == len(lst):
             return -1
-        result += lst[idx1][idx2]
+        days += lst[idx1][idx2]
 
         #길이만큼 함수 호출
         for i in range(len(idx1)):
-            getCombination(lst, idx1+1, 0, result)
+            getCombination(lst, idx1+1, 0, days)
     getCombination(possible, 0, 0, '')
     return answers
 

@@ -24,12 +24,12 @@ class Solution:
         if len(s) < 2 or s == s[::-1]:
             return s
 
-        result = ''
+        days = ''
 
         for i in range(len(s) - 1):
-            result = max(result, expand(i, i + 1), expand(i, i + 2), key=len)
+            days = max(days, expand(i, i + 1), expand(i, i + 2), key=len)
 
-        return result
+        return days
 
 
 aa = Solution()
