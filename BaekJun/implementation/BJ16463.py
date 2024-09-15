@@ -2,46 +2,51 @@ import calendar
 
 n = int(input())
 
+lst = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-# 2019 01 01 Tue
-def count13Friday(year, firstFriday):
+
+def isYoon(year):
+    if (year % 400 == 0) or (year % 100 != 0 and year % 4 == 0):
+        return True
+    elif (year % 400 != 0) or (year % 100 == 0):
+        return False
+    else:
+        return False
+
+
+def count13Friday(year, yoil, isYoon):
     result = 0
-
-    # 매달마다 금요일의 날짜를 구해 13일인지 체크
     month = 1
-    while (month < 13):
-        firstFriday += 7
-        if firstFriday == 13:
+    day = 1
+    friday = 0
+    friIdx = lst.index('Fri')
+    yoilIdx = lst.index(yoil)
+    if friIdx > yoilIdx:
+        friday = friIdx - yoilIdx + 1
+    elif friIdx == yoilIdx:
+        friday = 1
+    else:
+        friday = (7 - yoilIdx) + friIdx
+    while (True):
+        if friday < 13:
+            friday += 7
+        elif friday == 13:
             result += 1
         else:
             if month in [1, 3, 5, 7, 8, 10, 12]:
-                daysOfEachMonth = 31
-
+                day += 31
             elif month == 2:
-
-                if (year % 400 != 0 and year % 100 == 0):
-                    daysOfEachMonth = 28
-                # 윤년
-                elif year % 400 == 0 or (year % 100 != 0 and year % 4 == 0):
-                    daysOfEachMonth = 29
+                if isYoon:
+                    day += 29
                 else:
-                    daysOfEachMonth = 28
+                    day += 28
             else:
-                daysOfEachMonth = 30
-
-            if firstFriday > daysOfEachMonth:
-                firstFriday = firstFriday - daysOfEachMonth
-                month += 1
-    return result
+                day += 30
 
 
 answer = 0
-fridayEachYear = 4
+for _ in range(2019, n + 1):
+    firstYoil = 'Tue'
+    answer += count13Friday(_, firstYoil, isYoon(_))
 
-for i in range(2019, n + 1):
-    answer += count13Friday(i, fridayEachYear)
-    if i % 4 != 0:
-        fridayEachYear -= 1
-    else:
-        fridayEachYear -= 2
 print(answer)
