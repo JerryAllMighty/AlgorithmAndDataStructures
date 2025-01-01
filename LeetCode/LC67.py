@@ -1,10 +1,10 @@
   #문자열로 이루어진 두  이진수의 덧셈 결과를 리턴.
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        decimalResult = self.toDecimalAndSum(a, b)
-        binaryResult = self.toBinary(decimalResult)
+        decimaldays = self.toDecimalAndSum(a, b)
+        binarydays = self.toBinary(decimaldays)
       
-        return binaryResult
+        return binarydays
 
 
     def toDecimalAndSum(self, a, b):
@@ -20,21 +20,21 @@ class Solution:
 
 
 
-    def toBinary(self, decimalResult):
-        if decimalResult == 0:
+    def toBinary(self, decimaldays):
+        if decimaldays == 0:
             return "0"
         
-        binaryResult = ""
-        mok = decimalResult
+        binarydays = ""
+        mok = decimaldays
         while mok > 0:
             if mok == 1:
-                binaryResult = str(mok) + binaryResult
+                binarydays = str(mok) + binarydays
                 break
 
             mokNow = mok // 2
             nmgNow = mok % 2
             mok = mokNow
             if mok > 0:
-                binaryResult =  str(nmgNow) + binaryResult
+                binarydays =  str(nmgNow) + binarydays
 
-        return binaryResult
+        return binarydays

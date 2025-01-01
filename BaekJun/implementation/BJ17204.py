@@ -14,16 +14,9 @@ while (True):
         n = int(input())
         if n == 0:
             break
-        cnt = 0
         num = 1
-        while (True):
-            checkRepeated = isRepeated(num)
-            if checkRepeated is False:
-                cnt += 1
-            if cnt == n:
-                break
-            else:
-                num += 1
+        
+
 
         answers.append(num)
     except EOFError:

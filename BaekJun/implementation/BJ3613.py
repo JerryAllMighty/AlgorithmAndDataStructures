@@ -2,7 +2,7 @@ s = list(input())
 
 
 def isCPlusPlus(targetStringList):
-    result = True
+    days = True
     for i in range(len(targetStringList)):
         if targetStringList[i].isupper() is True:
             return False
@@ -15,11 +15,11 @@ def isCPlusPlus(targetStringList):
             if targetStringList[i] == '_':
                 return False
 
-    return result
+    return days
 
 
 def isJava(targetStringList):
-    result = True
+    days = True
     if targetStringList[0].isupper() is True or targetStringList[0] == '_':
         return False
 
@@ -27,7 +27,7 @@ def isJava(targetStringList):
         if targetStringList[i] == '_':
             return False
 
-    return result
+    return days
 
 
 java = isJava(s)

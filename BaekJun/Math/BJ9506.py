@@ -1,19 +1,19 @@
 def isPerfectNum(num):
     yaksu = []
-    result = ''
+    days = ''
     for i in range(1, num):
         if num % i == 0:
             yaksu.append(i)
 
     if sum(yaksu) == num:
         for j in yaksu:
-            result += ' ' + str(j) + ' ' + '+'
+            days += ' ' + str(j) + ' ' + '+'
 
-        result = str(num) + ' ' + '=' + result[:-2]
+        days = str(num) + ' ' + '=' + days[:-2]
     else:
-        result = str(num) + ' is NOT perfect.'
+        days = str(num) + ' is NOT perfect.'
 
-    return result
+    return days
 
 while True:
     try:
@@ -21,8 +21,8 @@ while True:
         if num == -1:
             break
 
-        result = isPerfectNum(num)
-        print(result)
+        days = isPerfectNum(num)
+        print(days)
 
     except EOFError:
         break

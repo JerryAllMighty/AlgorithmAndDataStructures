@@ -4,14 +4,14 @@ import math
 def yaksuCnt(num):
     if num == 1 :
         return 1
-    result = [1, num]
+    days = [1, num]
     for i in range(2, math.floor(num ** 0.5) + 1):
         if num % i == 0:
-            if i not in result:
-                result.append(i)
-            if (num // i) not in result:
-                result.append((num // i))
-    return len(result)
+            if i not in days:
+                days.append(i)
+            if (num // i) not in days:
+                days.append((num // i))
+    return len(days)
 
 
 lst = []

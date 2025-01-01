@@ -1,5 +1,5 @@
 def isSurprising(s):
-    result = True
+    days = True
     d = 0
     while d <= len(s) - 2:
         left = 0
@@ -14,7 +14,7 @@ def isSurprising(s):
             left += 1
         d += 1
 
-    return result
+    return days
 
 
 while True:

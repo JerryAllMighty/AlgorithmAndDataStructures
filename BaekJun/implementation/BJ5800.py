@@ -15,8 +15,8 @@ for i in range(cnt):
     answer = 'Class' + ' ' + str(i+1) + '\n'
     answer += 'Max ' + str(max(lst)) + ',' + ' Min ' + str(min(lst)) + ', ' + 'Largest gap '
     lst.sort(reverse=True)
-    result = LargestGap(lst)
-    answer += result
+    days = LargestGap(lst)
+    answer += days
 
     answers.append(answer)
 
