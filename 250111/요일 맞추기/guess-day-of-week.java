@@ -13,7 +13,7 @@ public class Main {
             startMonth++;
         }
 
-        return m1 > m2 ? result : -result;
+        return m1 < m2 ? result : -result;
 
     }
 
@@ -25,13 +25,20 @@ public class Main {
         int m2 = Integer.parseInt(input[2]);
         int d2 = Integer.parseInt(input[3]);
 
-        int dayGap = m1 < m2 ? daysPerMonth[m1] - d1 + d2 : -(daysPerMonth[m2] - d2 + d1);
-        if (m1 == m2) {
+        int dayGap = 0;
+        if (m1 < m2) {
+            dayGap = daysPerMonth[m1] - d1 + d2;
+        } else if (m1 > m2) {
+            dayGap = -(daysPerMonth[m2] - d2 + d1);
+        } else {
             dayGap = d2 - d1;
         }
         int totalDayGap = getDayGap(m1, m2) + dayGap;
-
-        System.out.println(days[1 + (totalDayGap % 7)]);
+        int dayIdx = (1 + totalDayGap) % 7;
+        if (dayIdx < 0) {
+            dayIdx = 7 + dayIdx;
+        }
+        System.out.println(days[dayIdx]);
 
 
     }
