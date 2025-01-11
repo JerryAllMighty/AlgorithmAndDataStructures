@@ -6,14 +6,14 @@ public class Main {
 
     public static int getDayGap(int m1, int m2) {
         int result = 0;
-        int startMonth = m1;
+        int startMonth = Math.min(m1, m2) + 1;
 
-        while (startMonth < m2) {
+        while (startMonth < Math.max(m1, m2)) {
             result += daysPerMonth[startMonth];
             startMonth++;
         }
 
-        return result;
+        return m1 > m2 ? result : -result;
 
     }
 
@@ -25,8 +25,11 @@ public class Main {
         int m2 = Integer.parseInt(input[2]);
         int d2 = Integer.parseInt(input[3]);
 
-
-        int totalDayGap = getDayGap(m1, m2) + d2 - d1;
+        int dayGap = m1 < m2 ? daysPerMonth[m1] - d1 + d2 : -(daysPerMonth[m2] - d2 + d1);
+        if (m1 == m2) {
+            dayGap = d2 - d1;
+        }
+        int totalDayGap = getDayGap(m1, m2) + dayGap;
 
         System.out.println(days[1 + (totalDayGap % 7)]);
 
