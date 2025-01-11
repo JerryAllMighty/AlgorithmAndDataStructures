@@ -43,6 +43,9 @@ public class Main {
         }
         int totalDayGap = getDayGap(m1, m2) + dayGap;
         int answer = 1 + ((totalDayGap - dayOfTheWeekIdx) / 7);
+        if (m1 == m2 && d1 == d2) {
+            answer -= 1;
+        }
         System.out.println(answer);
 
 
