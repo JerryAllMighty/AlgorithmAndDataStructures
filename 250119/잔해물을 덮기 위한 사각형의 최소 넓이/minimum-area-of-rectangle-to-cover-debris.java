@@ -19,7 +19,7 @@ public class Main {
                     if (i == 0) {
                         lst[j + OFFSET][k + OFFSET]++;
                     } else {
-                        lst[j + OFFSET][k + OFFSET] += 2;
+                        lst[j + OFFSET][k + OFFSET]--;
                     }
 
                 }
@@ -29,12 +29,13 @@ public class Main {
         int minCol = 2000;
         int maxRow = -1;
         int maxCol = -1;
-
+        boolean isDuplicate = false;
         for (int i = 0; i < lst.length; i++) {
             int[] row = lst[i];
             for (int j = 0; j < row.length; j++) {
                 int val = row[j];
                 if (val == 1) {
+                    isDuplicate = true;
                     minRow = Math.min(minRow, i);
                     minCol = Math.min(minCol, j);
                     maxRow = Math.max(maxRow, i);
@@ -42,7 +43,12 @@ public class Main {
                 }
             }
         }
-        System.out.println((maxRow + 1 - minRow) * (maxCol + 1 - minCol));
+        if(isDuplicate){
+            System.out.println((maxRow + 1 - minRow) * (maxCol + 1 - minCol));
+        }else{
+            System.out.println(0);
+        }
+
     }
 }
 
