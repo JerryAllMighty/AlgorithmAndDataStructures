@@ -38,13 +38,18 @@ public class Main {
         move(lstA, n, lastIndexA, timeA);
         move(lstB, m, lastIndexB, timeB);
 
+        boolean isSame = false;
         for (int i = 0; i < lstA.length; i++) {
             if (lstA[i] > 0 && lstB[i] > 0 && lstA[i] == lstB[i]) {
                 System.out.println(lstA[i]);
+                isSame = true;
                 break;
             }
         }
-        System.out.println(-1);
+        if(!isSame){
+            System.out.println(-1);
+        }
+
 
     }
 }
