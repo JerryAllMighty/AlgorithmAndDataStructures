@@ -26,7 +26,7 @@ public class Main {
                     targetLastIdx++;
                 }
 
-                targetLst[targetLastIdx + OFFSET] = targetTime;
+                targetLst[targetTime + OFFSET] = targetLastIdx;
             }
         }
     }
@@ -35,13 +35,17 @@ public class Main {
         int[] input = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int n = input[0];
         int m = input[1];
+        Arrays.fill(lstA, -2000002);
+        Arrays.fill(lstB, -2000002);
         move(lstA, n, lastIndexA, timeA);
         move(lstB, m, lastIndexB, timeB);
 
         boolean isSame = false;
         for (int i = 0; i < lstA.length; i++) {
-            if (lstA[i] > 0 && lstB[i] > 0 && lstA[i] == lstB[i]) {
-                System.out.println(lstA[i]);
+            if (lstA[i] != -2000002 && (lstA[i] == lstB[i])) {
+//                System.out.println(Integer.toString(i-OFFSET) + " A " + Integer.toString(lstA[i]));
+//                System.out.println(Integer.toString(i-OFFSET) + " B " + Integer.toString(lstB[i]));
+                System.out.println(i-OFFSET);
                 isSame = true;
                 break;
             }
