@@ -13,8 +13,8 @@ public class Main {
         int previousDistanceA = 0;
         int previousDistanceB = 0;
 
-        int[] lstA = new int[30];
-        int[] lstB = new int[30];
+        int[] lstA = new int[1000000];
+        int[] lstB = new int[1000000];
 
         for (int i = 0; i < n; i++) {
             int[] vt = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
