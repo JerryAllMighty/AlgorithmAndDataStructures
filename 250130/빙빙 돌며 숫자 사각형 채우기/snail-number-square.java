@@ -24,21 +24,17 @@ public class Main {
         int y = 0;
         int d = 0;
         int num = 1;
-        while (true) {
-            if (inRange(x + dx[d], y + dy[d], n, m) && grid[x + dx[d]][y + dy[d]] == 0) {
-                num++;
-                grid[x + dx[d]][y + dy[d]] = num;
-                x = x + dx[d];
-                y = y + dy[d];
-
-                if (num == (n * m)) {
-                    break;
-                }
-            } else {
+        for(int i =0; i < n*m;i++){
+            if (!inRange(x + dx[d], y + dy[d], n, m) || grid[x + dx[d]][y + dy[d]] != 0) {
                 d = (d + 1) % 4;
             }
-
+            num++;
+            grid[x + dx[d]][y + dy[d]] = num;
+            x = x + dx[d];
+            y = y + dy[d];
         }
+
+
 
         for (int[] row : grid) {
             for (int i = 0; i < row.length; i++) {
