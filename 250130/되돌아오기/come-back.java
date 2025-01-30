@@ -19,7 +19,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
-        int answer = -1;
         int x = 0;
         int y = 0;
         int time = 0;
@@ -33,13 +32,14 @@ public class Main {
                 y += dy[d];
                 time++;
                 if(x == 0 && y == 0){
-                    answer = time;
+                    System.out.println(time);
+                    System.exit(0);
                 }
             }
 
 
         }
-        System.out.println(answer);
+        System.out.println(-1);
 
     }
 }
