@@ -19,11 +19,10 @@ public class Main {
         int m = input[1];
 
         int[][] grid = new int[n][m];
-        grid[0][0] = 1;
         int x = 0;
-        int y = 0;
+        int y = -1;
         int d = 0;
-        int num = 1;
+        int num = 0;
         for(int i =0; i < n*m;i++){
             if (!inRange(x + dx[d], y + dy[d], n, m) || grid[x + dx[d]][y + dy[d]] != 0) {
                 d = (d + 1) % 4;
