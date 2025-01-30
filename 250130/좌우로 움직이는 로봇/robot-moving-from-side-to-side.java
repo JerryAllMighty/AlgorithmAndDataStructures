@@ -6,8 +6,8 @@ public class Main {
         int[] input = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int n = input[0];
         int m = input[1];
-        int[] lstA = new int[1000000];
-        int[] lstB = new int[1000000];
+        int[] lstA = new int[250000000];
+        int[] lstB = new int[250000000];
 
         int previousIdxA = 0;
         int previousIdxB = 0;
@@ -34,7 +34,7 @@ public class Main {
             }
             previousTimeA += cnt;
         }
-        Arrays.fill(lstA, previousTimeA + 1, 1000000, previousIdxA);
+        Arrays.fill(lstA, previousTimeA + 1, 250000000, previousIdxA);
 
         for (int i = 0; i < m; i++) {
             String[] directionCnt = sc.nextLine().split(" ");
@@ -54,7 +54,7 @@ public class Main {
             }
             previousTimeB += cnt;
         }
-        Arrays.fill(lstB, previousTimeB + 1, 1000000, previousIdxB);
+        Arrays.fill(lstB, previousTimeB + 1, 250000000, previousIdxB);
 
         int answer = 0;
         for (int i = 1; i < Math.max(previousTimeA, previousTimeB); i++) {
