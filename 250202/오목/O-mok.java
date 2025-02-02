@@ -4,14 +4,17 @@ public class Main {
     static int[][] grid = new int[19][19];
 
     static boolean inRange(int r, int c, int n, int m) {
-        return r >= 0 && c >= 0 && r < n && c < m
-        && r + 4 > 0 &&  c + 4 >= 0 && r + 4 < n && c + 4 < m;
+        if(r >= 0 && c >= 0 && r < n && c < m){
+            return true;
+        }
+        return false;
 
     }
 
     static String[] isWinner(int r, int c, int n, int m) {
         String[] result = new String[3];
-        if (inRange(r,c,n,m) && grid[r][c] == grid[r][c + 1]
+        if (inRange(r,c,n,m) && c + 4 < m
+                && grid[r][c] == grid[r][c + 1]
                 && (grid[r][c + 1] == grid[r][c + 2])
                 && (grid[r][c + 2] == grid[r][c + 3])
                 && (grid[r][c + 3] == grid[r][c + 4])) {
@@ -20,7 +23,8 @@ public class Main {
             result[2] = Integer.toString(c + 2);
             return result;
         }
-        if (inRange(r,c,n,m) && (grid[r][c] == grid[r + 1][c])
+        if (inRange(r,c,n,m) &&  r + 4 < n
+                && (grid[r][c] == grid[r + 1][c])
                 && (grid[r + 1][c] == grid[r + 2][c])
                 && (grid[r + 2][c] == grid[r + 3][c])
                 && (grid[r + 3][c] == grid[r + 4][c])) {
@@ -29,7 +33,8 @@ public class Main {
             result[2] = Integer.toString(c);
             return result;
         }
-        if (inRange(r,c,n,m) && (grid[r][c] == grid[r + 1][c + 1])
+        if (inRange(r,c,n,m) &&  c + 4 < m && r + 4 < n
+                && (grid[r][c] == grid[r + 1][c + 1])
                 && (grid[r + 1][c + 1] == grid[r + 2][c + 2])
                 && (grid[r + 2][c + 2] == grid[r + 3][c + 3])
                 && (grid[r + 3][c + 3] == grid[r + 4][c + 4])) {
@@ -39,7 +44,8 @@ public class Main {
             return result;
         }
         //왼쪽 아래 대각선
-        if (inRange(r,c,n,m) && (grid[r][c] == grid[r + 1][c - 1])
+        if (inRange(r,c,n,m) && c - 4 >= 0 && r + 4 < n
+                && (grid[r][c] == grid[r + 1][c - 1])
                 && (grid[r + 1][c - 1] == grid[r + 2][c - 2])
                 && (grid[r + 2][c - 2] == grid[r + 3][c - 3])
                 && (grid[r + 3][c - 3] == grid[r + 4][c - 4])) {
@@ -49,7 +55,8 @@ public class Main {
             return result;
         }
         //오른쪽 위 대각선
-        if (inRange(r,c,n,m) && (grid[r][c] == grid[r - 1][c + 1])
+        if (inRange(r,c,n,m) && r - 4 >= 0 && c + 4 < n
+                && (grid[r][c] == grid[r - 1][c + 1])
                 && (grid[r - 1][c + 1] == grid[r - 2][c + 2])
                 && (grid[r - 2][c + 2] == grid[r - 3][c + 3])
                 && (grid[r - 3][c + 3] == grid[r - 4][c + 4])) {
@@ -59,7 +66,8 @@ public class Main {
             return result;
         }
         //왼쪽 위 대각선
-        if (inRange(r,c,n,m) && (grid[r][c] == grid[r - 1][c - 1])
+        if (inRange(r,c,n,m) && r - 4 >= 0 && c - 4 >= 0
+                && (grid[r][c] == grid[r - 1][c - 1])
                 && (grid[r - 1][c - 1] == grid[r - 2][c - 2])
                 && (grid[r - 2][c - 2] == grid[r - 3][c - 3])
                 && (grid[r - 3][c - 3] == grid[r - 4][c - 4])) {
