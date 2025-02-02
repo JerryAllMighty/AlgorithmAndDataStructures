@@ -32,6 +32,36 @@ public class Main {
             result[2] = Integer.toString(c + 2);
             return result;
         }
+        //왼쪽 아래 대각선
+        if ((grid[r][c] == grid[r + 1][c - 1])
+                && (grid[r + 1][c - 1] == grid[r + 2][c - 2])
+                && (grid[r + 2][c - 2] == grid[r + 3][c - 3])
+                && (grid[r + 3][c - 3] == grid[r + 4][c - 4])) {
+            result[0] = "true";
+            result[1] = Integer.toString(r + 2);
+            result[2] = Integer.toString(c - 2);
+            return result;
+        }
+        //오른쪽 위 대각선
+        if ((grid[r][c] == grid[r - 1][c + 1])
+                && (grid[r - 1][c + 1] == grid[r - 2][c + 2])
+                && (grid[r - 2][c + 2] == grid[r - 3][c + 3])
+                && (grid[r - 3][c + 3] == grid[r - 4][c + 4])) {
+            result[0] = "true";
+            result[1] = Integer.toString(r - 2);
+            result[2] = Integer.toString(c + 2);
+            return result;
+        }
+        //왼쪽 위 대각선
+        if ((grid[r][c] == grid[r - 1][c - 1])
+                && (grid[r - 1][c - 1] == grid[r - 2][c - 2])
+                && (grid[r - 2][c - 2] == grid[r - 3][c - 3])
+                && (grid[r - 3][c - 3] == grid[r - 4][c - 4])) {
+            result[0] = "true";
+            result[1] = Integer.toString(r - 2);
+            result[2] = Integer.toString(c - 2);
+            return result;
+        }
 
         result[0] = "false";
         result[1] = Integer.toString(r);
