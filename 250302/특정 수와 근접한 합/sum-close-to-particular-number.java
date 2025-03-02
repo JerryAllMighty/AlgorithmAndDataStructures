@@ -12,15 +12,15 @@ public class Main {
         List<Integer> lst = new ArrayList<>();
 
         for (int i = 0; i < n - 1; i++) {
-            int num1 = nums[i];
             for (int j = i + 1; j < n; j++) {
                 int temp = 0;
                 List<Integer> visited = new ArrayList<>();
-                int num2 = nums[j];
+                visited.add(i);
+                visited.add(j);
                 for (int k = 0; k < n; k++) {
-                    if (nums[k] != num1 && nums[k] != num2 && !visited.contains(nums[k])) {
+                    if (!visited.contains(k)) {
                         temp += nums[k];
-                        visited.add(nums[k]);
+                        visited.add(k);
                     }
                 }
                 lst.add(Math.abs(s - temp));
