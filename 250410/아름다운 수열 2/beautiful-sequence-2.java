@@ -3,16 +3,18 @@ import java.util.*;
 public class Main {
 
     static int isBeautifulNum(int[] temp, int[] bArray) {
+        int[] toRemove = bArray.clone();
         for (int i = 0; i < temp.length; i++) {
-            boolean isExist = false;
             for (int j = 0; j < bArray.length; j++) {
                 if (bArray[j] == temp[i]) {
-                    isExist = true;
+                    toRemove[j] = 0;
                 }
             }
-            if (!isExist) {
-                return 0;
-            }
+        }
+
+        long cnt = Arrays.stream(toRemove).filter(x -> x != 0).count();
+        if(cnt > 0){
+            return 0;
         }
         return 1;
 
