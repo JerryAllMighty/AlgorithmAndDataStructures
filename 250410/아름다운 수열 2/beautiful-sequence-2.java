@@ -3,11 +3,11 @@ import java.util.*;
 public class Main {
 
     static int isBeautifulNum(int[] temp, int[] bArray) {
-        int[] toRemove = bArray.clone();
+        int[] toRemove = temp.clone();
         for (int i = 0; i < temp.length; i++) {
             for (int j = 0; j < bArray.length; j++) {
                 if (bArray[j] == temp[i]) {
-                    toRemove[j] = 0;
+                    toRemove[i] = 0;
                 }
             }
         }
