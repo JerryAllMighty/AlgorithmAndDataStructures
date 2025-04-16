@@ -14,11 +14,14 @@ public class Main {
         for (int i = 0; i <= n - m; i++) {
             int[] temp = new int[m];
             Arrays.fill(temp, 0);
+            List<Integer> visited = new ArrayList<>();
             for (int j = 0; j < m; j++) {
                 int val = lstA[i + j];
                 for (int k = 0; k < lstB.length; k++) {
-                    if (val == lstB[k]) {
+                    if (val == lstB[k] && !visited.contains(k)) {
                         temp[j] = val;
+                        visited.add(k);
+                        break;
                     }
 
                 }
