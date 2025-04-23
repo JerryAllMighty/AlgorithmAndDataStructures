@@ -13,14 +13,16 @@ public class Main {
             int[] infos = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             int cnt = infos[0];
             int direction = infos[1];
-            candies[direction] = cnt;
+            candies[direction] += cnt;
         }
 
         int answer = 0;
-        for (int i = k; i < 101 - k; i++) {
+        for (int i = 0; i < 101; i++) {
             int temp = 0;
             for (int j = i - k; j <= i + k; j++) {
-                temp += candies[j];
+                if (j >= 0 && j < 101) {
+                    temp += candies[j];
+                }
 
             }
             answer = Math.max(answer, temp);
