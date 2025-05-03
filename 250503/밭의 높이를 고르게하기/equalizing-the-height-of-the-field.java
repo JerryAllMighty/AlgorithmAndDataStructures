@@ -9,7 +9,7 @@ public class Main {
         int height = info[1];
         int continuousCnt = info[2];
 
-        int answer = 101;
+        int answer = Integer.MAX_VALUE;
         int[] lst = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         for (int i = 0; i <= lst.length - continuousCnt; i++) {
