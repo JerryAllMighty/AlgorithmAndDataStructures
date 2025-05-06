@@ -18,7 +18,7 @@ public class Main {
             lst[min] = temp;
         }
         for(int i =0; i < lst.length; i++){
-            System.out.print(lst[i]);
+            System.out.print(lst[i] + " ");
         }
 
 
