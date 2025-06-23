@@ -37,12 +37,12 @@ public class Main {
             lst.add(charArray[i]);
         }
         it = lst.listIterator(lst.size());
-        String[][] info = new String[n][];
+        String[][] info = new String[m][];
         for (int i = 0; i < m; i++) {
             String[] encryptMsgArray = sc.nextLine().split(" ");
             info[i] = encryptMsgArray;
         }
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < m; i++) {
             fn(info[i]);
         }
 
