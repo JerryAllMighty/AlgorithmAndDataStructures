@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgorithmAndDataStructures.iml" filepath="$PROJECT_DIR$/.idea/AlgorithmAndDataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCompiler/JavaCompiler.iml" filepath="$PROJECT_DIR$/JavaCompiler/JavaCompiler.iml" />
     </modules>
   </component>
 </project>

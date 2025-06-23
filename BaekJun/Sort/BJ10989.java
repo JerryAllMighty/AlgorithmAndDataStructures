@@ -25,7 +25,7 @@ public class BJ10989 {
 }
 
 //2024.01.06 새로운 시도, 두 정렬 방법 모두 시간 초과
-//public class Main {
+//public class com.main.javacompiler.Main {
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int cnt = Integer.parseInt(sc.nextLine());

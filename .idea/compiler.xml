@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/.idea" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/250623" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/BaekJun" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/GeeksForGeeks" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/KNOU" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/LeetCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/Programmers" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/이것이코딩테스트다" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/파이썬알고리즘인터뷰" includeSubdirectories="true" />
+      <file url="file://$PROJECT_DIR$/debug.log" />
+      <file url="file://$PROJECT_DIR$/pythonPracticeSheet.py" />
+      <file url="file://$PROJECT_DIR$/readme.txt" />
+    </excludeFromCompile>
+  </component>
+</project>

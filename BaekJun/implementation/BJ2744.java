@@ -27,7 +27,7 @@ public class BJ2744 {
 //
 //import static java.lang.Math.max;
 //
-//public class Main {
+//public class com.main.javacompiler.Main {
 //  public static void main(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //    StringBuilder sb = new StringBuilder();
