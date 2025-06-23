@@ -1,6 +1,31 @@
 import java.util.*;
 
 public class Main {
+    static ListIterator<Character> it;
+
+    static void fn(String[] encryptMsgArray) {
+        String encryptMsg = encryptMsgArray[0];
+
+        if (encryptMsg.equals("L")) {
+            if (it.hasPrevious()) {
+                it.previous();
+            }
+        } else if (encryptMsg.equals("R")) {
+            if (it.hasNext()) {
+                it.next();
+            }
+        } else if (encryptMsg.equals("D")) {
+            if (it.hasNext()) {
+                it.next();
+                it.remove();
+            }
+        } else if (encryptMsg.equals("P")) {
+            if (encryptMsgArray.length > 1) {
+                it.add(encryptMsgArray[1].toCharArray()[0]);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] cntList = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -11,30 +36,16 @@ public class Main {
         for (int i = 0; i < charArray.length; i++) {
             lst.add(charArray[i]);
         }
-        ListIterator<Character> it = lst.listIterator(lst.size());
+        it = lst.listIterator(lst.size());
+        String[][] info = new String[n][];
         for (int i = 0; i < m; i++) {
             String[] encryptMsgArray = sc.nextLine().split(" ");
-            String encryptMsg = encryptMsgArray[0];
-
-            if (encryptMsg.equals("L")) {
-                if (it.hasPrevious()) {
-                    it.previous();
-                }
-            } else if (encryptMsg.equals("R")) {
-                if (it.hasNext()) {
-                    it.next();
-                }
-            } else if (encryptMsg.equals("D")) {
-                if (it.hasNext()) {
-                    it.next();
-                    it.remove();
-                }
-            } else if (encryptMsg.equals("P")) {
-                if (encryptMsgArray.length > 1) {
-                    it.add(encryptMsgArray[1].toCharArray()[0]);
-                }
-            }
+            info[i] = encryptMsgArray;
         }
+        for (int i = 0; i < n; i++) {
+            fn(info[i]);
+        }
+
         lst.forEach(x -> System.out.print(x + ""));
     }
 }
