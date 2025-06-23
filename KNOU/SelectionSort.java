@@ -4,7 +4,7 @@ public class SelectionSort {
     /* 한국방송통신대학교 알고리즘 예제
    선택 정렬 예제
     */
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         //선택 정렬 예제 2.1
         int[] lst = {30, 20, 40, 35, 5, 10, 45, 50, 25, 15};
         int[] answers = new int[10];

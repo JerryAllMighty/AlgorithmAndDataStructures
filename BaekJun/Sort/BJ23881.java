@@ -7,7 +7,7 @@ public class BJ23881 {
     개인 풀이 시도 첫번째 결과 성공
     메모리 : 18192	시간 : 344
      */
-//    public static void main(String[] args) {
+//    public static void Test(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        String[] given = sc.nextLine().split(" ");
 //        String[] stringList = sc.nextLine().split(" ");

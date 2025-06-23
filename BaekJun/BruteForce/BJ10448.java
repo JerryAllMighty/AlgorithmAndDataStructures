@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main
+class Test
 {
     static boolean[] isEurekaNumber = new boolean[1001];
 
@@ -22,7 +22,7 @@ class Main
                 }
     }
 
-    public static void main (String[] args) {
+    public static void Test (String[] args) {
         preprocess();
 
         Scanner sc = new Scanner(System.in);

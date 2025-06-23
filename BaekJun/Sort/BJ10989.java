@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BJ10989 {
-    public static void main(String[] args) throws IOException {
+    public static void Test(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -25,8 +25,8 @@ public class BJ10989 {
 }
 
 //2024.01.06 새로운 시도, 두 정렬 방법 모두 시간 초과
-//public class com.main.javacompiler.Main {
-//    public static void main(String[] args) {
+//public class com.Test.javacompiler.Test {
+//    public static void Test(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int cnt = Integer.parseInt(sc.nextLine());
 //        ArrayList<Integer> given = new ArrayList<Integer>();

@@ -36,7 +36,7 @@ def get_binary(arr):
     return cur
 
 
-def main():
+def Test():
     n = int(sys.stdin.readline())
     choices = []
     for _ in range(n):
@@ -58,5 +58,5 @@ def main():
         print(c)
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__Test__":
+    Test()

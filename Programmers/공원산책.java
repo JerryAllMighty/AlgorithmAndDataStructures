@@ -92,7 +92,7 @@ public class 공원산책 {
     }
 
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         String[] park = {"OSO", "OOO", "OXO", "OOO"};
         String[] routes = {"E 2", "S 3", "W 1"};
         int[] aa = Solution.solution(park, routes);

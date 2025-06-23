@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BJ1919 {
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
     String a = sc.next();
     String b = sc.next();
@@ -45,8 +45,8 @@ public class BJ1919 {
 //
 //import static java.lang.Math.max;
 //
-//public class com.main.javacompiler.Main {
-//  public static void main(String[] args) {
+//public class com.Test.javacompiler.Test {
+//  public static void Test(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //    char[] first = sc.nextLine().toCharArray();
 //    char[] second = sc.nextLine().toCharArray();

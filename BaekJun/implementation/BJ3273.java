@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 
-public class Main{
+public class Test{
 
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
 
     int N = sc.nextInt();

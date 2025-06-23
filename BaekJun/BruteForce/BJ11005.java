@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BJ11005{
 
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
     String[] given = sc.nextLine().split(" ");
     sc.close();
@@ -45,8 +45,8 @@ public class BJ11005{
    */
 //  import java.util.Scanner;
 
-//  public class com.main.javacompiler.Main {
-//    public static void main(String[] args) {
+//  public class com.Test.javacompiler.Test {
+//    public static void Test(String[] args) {
 //      Scanner sc = new Scanner(System.in);
 //      String[] given = sc.nextLine().split(" ");
 //      int toChange = Integer.parseInt(given[0]);

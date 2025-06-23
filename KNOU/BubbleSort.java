@@ -1,7 +1,7 @@
 package KNOU;
 
 public class BubbleSort {
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         //예제 2.3
         int[] lst = {30, 20, 40, 35, 5, 10, 45, 50, 25, 15};
         int[] answers = new int[10];

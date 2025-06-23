@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
-public class Main {
+public class Test {
     public static List<Integer> isExist = new ArrayList<>();
     public static void containsCharThenRemove(char c, char[] charList) {
         for (int i = 0; i < charList.length; i++) {
@@ -16,7 +16,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] a = sc.nextLine().toCharArray();
         char[] b = sc.nextLine().toCharArray();

@@ -3,7 +3,7 @@ package BaekJun.implementation;
 import java.util.Scanner;
 
 public class BJ1543 {
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
     String doc = sc.nextLine();
     String word = sc.nextLine(); 
@@ -25,7 +25,7 @@ public class BJ1543 {
 
   //2024.01.01 재시도, java 내장 함수 사용 아닌 일일히 구현.
   //결과는 메모리 초과
-//  public static void main(String[] args) {
+//  public static void Test(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //    String given = sc.nextLine();
 //    String toSearch = sc.nextLine();

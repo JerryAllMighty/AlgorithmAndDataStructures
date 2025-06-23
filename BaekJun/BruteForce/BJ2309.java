@@ -21,7 +21,7 @@ class BJ2309
         }
     }
 
-    public static void main (String[] args) {
+    public static void Test (String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int[] h = new int[9];
@@ -50,7 +50,7 @@ class BJ2309
 }
 
 //2023.01.02
-//public static void main(String[] args) {
+//public static void Test(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //    ArrayList<Integer> given = new ArrayList<>();
 //

@@ -54,7 +54,7 @@ public class BJ1094 {
         return lst.size();
     }
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int result = cut(x);

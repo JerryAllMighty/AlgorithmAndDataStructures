@@ -3,7 +3,7 @@ package BaekJun.implementation;
 import java.util.Scanner;
 
 public class BJ13223 {
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         String current = sc.next();
         String drop = sc.next();
@@ -40,7 +40,7 @@ public class BJ13223 {
 }
 
 //2024.01.01 자체 문제 풀이 추가
-//public static void main(String[] args) {
+//public static void Test(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //
 //    String[] currentTime = sc.nextLine().split(":");

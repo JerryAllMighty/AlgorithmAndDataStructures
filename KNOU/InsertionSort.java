@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class InsertionSort {
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         //삽입 정렬의 경우 기존 정렬된 리스트에 데이터 삽입이 이루어지기에, 원할하게 데이터 삽입이 이루어지는 List를 활용
         ArrayList<Integer> lst = new ArrayList<>(Arrays.asList(30, 20, 40, 35, 5, 10, 45, 50, 25, 15));
         ArrayList<Integer> sortedList = new ArrayList<>();

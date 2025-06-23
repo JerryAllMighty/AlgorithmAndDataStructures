@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class BJ10431
 {
-    public static void main (String[] args) {
+    public static void Test (String[] args) {
         Scanner sc = new Scanner(System.in);
         int P = sc.nextInt();
         while (P-- > 0) {
@@ -41,8 +41,8 @@ class BJ10431
 //
 //import static java.lang.Math.max;
 //
-//public class com.main.javacompiler.Main {
-//    public static void main(String[] args) {
+//public class com.Test.javacompiler.Test {
+//    public static void Test(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int cnt = sc.nextInt();
 //        sc.nextLine();

@@ -43,7 +43,7 @@ public class 문자열나누기 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Solution solution = new Solution();
         System.out.println(solution.solution("aaabbaccccabba"));
 

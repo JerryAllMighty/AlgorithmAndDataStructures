@@ -1,8 +1,8 @@
 import java.util.*;
 
 
-public class Main {
-    public static void main(String[] args) {
+public class Test {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] input = sc.nextLine().toLowerCase().toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();

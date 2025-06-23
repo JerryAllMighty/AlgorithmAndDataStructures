@@ -57,7 +57,7 @@ public class 붕대감기 {
 
     }
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Solution solution = new Solution();
         int[] bandage = {3, 2, 7};
         int health = 20;

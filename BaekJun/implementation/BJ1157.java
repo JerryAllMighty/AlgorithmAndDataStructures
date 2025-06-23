@@ -12,7 +12,7 @@ public class BJ1157 {
     return count;
 
   }
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
     String str = sc.next().toUpperCase();
 

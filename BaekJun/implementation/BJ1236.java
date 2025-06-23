@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Math.max;
 
 public class BJ1236 {
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] givens = sc.nextLine().split(" ");
 

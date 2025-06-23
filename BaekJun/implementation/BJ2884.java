@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Test {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hour = sc.nextInt();
         int minute = sc.nextInt();

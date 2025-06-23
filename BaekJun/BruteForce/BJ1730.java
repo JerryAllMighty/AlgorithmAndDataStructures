@@ -44,7 +44,7 @@ public class BJ1730 {
 
     }
 
-    public static void main(String[] args) {
+    public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         int cnt = Integer.parseInt(sc.nextLine());
         char[] directions = sc.nextLine().toCharArray();

@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-class Main
+class Test
 {
-    public static void main (String[] args) {
+    public static void Test (String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int M = sc.nextInt();

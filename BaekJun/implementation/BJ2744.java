@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class BJ2744 {
 
-  public static void main(String[] args) {
+  public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);
     String str =  sc.next(); 
     String ans = "";
@@ -27,8 +27,8 @@ public class BJ2744 {
 //
 //import static java.lang.Math.max;
 //
-//public class com.main.javacompiler.Main {
-//  public static void main(String[] args) {
+//public class com.Test.javacompiler.Test {
+//  public static void Test(String[] args) {
 //    Scanner sc = new Scanner(System.in);
 //    StringBuilder sb = new StringBuilder();
 //    char[] given = sc.nextLine().toCharArray();

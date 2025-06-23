@@ -1,5 +1,5 @@
-public class Main {
-    public static void main(String[] args) {
+public class Test {
+    public static void Test(String[] args) {
         System.out.println("\\    /\\");
         System.out.println(" )  ( ')");
         System.out.println("(  /  )");
