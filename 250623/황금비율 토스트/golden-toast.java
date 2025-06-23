@@ -1,7 +1,9 @@
 import java.util.*;
 
 public class Main {
-    static ListIterator<Character> it;
+    //변수 선언
+    static ListIterator<String> it;
+    static List<String> lst = new ArrayList<>();
 
     static void fn(String[] encryptMsgArray) {
         String encryptMsg = encryptMsgArray[0];
@@ -21,7 +23,7 @@ public class Main {
             }
         } else if (encryptMsg.equals("P")) {
             if (encryptMsgArray.length > 1) {
-                it.add(encryptMsgArray[1].toCharArray()[0]);
+                it.add(encryptMsgArray[1].toString());
             }
         }
     }
@@ -31,19 +33,16 @@ public class Main {
         int[] cntList = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int n = cntList[0];
         int m = cntList[1];
-        char[] charArray = sc.nextLine().toCharArray();
-        List<Character> lst = new ArrayList<>();
-        for (int i = 0; i < charArray.length; i++) {
-            lst.add(charArray[i]);
+
+        //변수 초기화
+        String[] targetMsg = sc.nextLine().split("");
+        for (int i = 0; i < n; i++) {
+            lst.add(targetMsg[i]);
         }
-        it = lst.listIterator(lst.size());
-        String[][] info = new String[m][];
+        it = lst.listIterator(n);
         for (int i = 0; i < m; i++) {
             String[] encryptMsgArray = sc.nextLine().split(" ");
-            info[i] = encryptMsgArray;
-        }
-        for (int i = 0; i < m; i++) {
-            fn(info[i]);
+            fn(encryptMsgArray);
         }
 
         lst.forEach(x -> System.out.print(x + ""));
