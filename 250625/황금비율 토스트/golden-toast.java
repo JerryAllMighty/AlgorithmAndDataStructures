@@ -24,7 +24,7 @@ public class Main {
                 it.next();
                 it.remove();
             }
-        } else if (dir.equals("P") && !chr.isBlank()) {
+        } else if (dir.equals("P") && !chr.isEmpty()) {
             it.add(chr);
         }
     }
