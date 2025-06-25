@@ -36,7 +36,7 @@ public class Main {
         int m = cntList[1];
 
         String encryptMsg = sc.nextLine();
-        List<Character> lst = new ArrayList<>();
+        LinkedList<Character> lst = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             lst.add(encryptMsg.charAt(i));
         }
