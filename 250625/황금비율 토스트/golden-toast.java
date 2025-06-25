@@ -1,34 +1,6 @@
 import java.util.*;
 
 public class Main {
-    static ListIterator<Character> it;
-
-    static void fn(String[] type) {
-        String dir = type[0];
-        Character chr = null;
-        if (type.length > 1) {
-            chr = type[1].toCharArray()[0];
-        }
-
-        if (dir.equals("L")) {
-            if (it.hasPrevious()) {
-                it.previous();
-            }
-
-        } else if (dir.equals("R")) {
-            if (it.hasNext()) {
-                it.next();
-            }
-        } else if (dir.equals("D")) {
-            if (it.hasNext()) {
-                it.next();
-                it.remove();
-            }
-        } else if (dir.equals("P") && chr != null) {
-            it.add(chr);
-        }
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] cntList = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -41,19 +13,34 @@ public class Main {
             lst.add(encryptMsg.charAt(i));
         }
 
-        it = lst.listIterator(n);
-        String[][] infos = new String[m][];
+        ListIterator<Character> it = lst.listIterator(n);
+
         for (int i = 0; i < m; i++) {
-            String[] info = sc.nextLine().split(" ");
-            infos[i] = info;
+            char dir = sc.next().charAt(0);
+            if (dir == 'L') {
+                if (it.hasPrevious()) {
+                    it.previous();
+                }
+
+            } else if (dir == 'R') {
+                if (it.hasNext()) {
+                    it.next();
+                }
+            } else if (dir == 'D') {
+                if (it.hasNext()) {
+                    it.next();
+                    it.remove();
+                }
+            } else if (dir == 'P') {
+                Character chr = sc.next().charAt(0);
+                it.add(chr);
+            }
         }
-        for (int i = 0; i < m; i++) {
-            fn(infos[i]);
-        }
+
 
         //출력
         it = lst.listIterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.print(it.next());
 
         }
