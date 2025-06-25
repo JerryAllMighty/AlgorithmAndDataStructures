@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Main {
@@ -25,8 +24,7 @@ public class Main {
                 it.next();
                 it.remove();
             }
-
-        } else if (dir.equals("P") && !chr.isEmpty()) {
+        } else if (dir.equals("P") && !chr.isBlank()) {
             it.add(chr);
         }
     }
@@ -44,9 +42,13 @@ public class Main {
         }
 
         it = lst.listIterator(n);
+        String[][] infos = new String[m][];
         for (int i = 0; i < m; i++) {
             String[] info = sc.nextLine().split(" ");
-            fn(info);
+            infos[i] = info;
+        }
+        for (int i = 0; i < m; i++) {
+            fn(infos[i]);
         }
 
         lst.forEach(x -> System.out.print(x + ""));
