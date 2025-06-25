@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class Main {
-    static ListIterator<String> it;
+    static ListIterator<Character> it;
 
     static void fn(String[] type) {
         String dir = type[0];
-        String chr = "";
+        Character chr = null;
         if (type.length > 1) {
-            chr = type[1];
+            chr = type[1].toCharArray()[0];
         }
 
         if (dir.equals("L")) {
@@ -24,7 +24,7 @@ public class Main {
                 it.next();
                 it.remove();
             }
-        } else if (dir.equals("P") && !chr.isEmpty()) {
+        } else if (dir.equals("P") && chr != null) {
             it.add(chr);
         }
     }
@@ -36,9 +36,9 @@ public class Main {
         int m = cntList[1];
 
         String encryptMsg = sc.nextLine();
-        List<String> lst = new ArrayList<>();
+        List<Character> lst = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            lst.add(encryptMsg.substring(i, i + 1));
+            lst.add(encryptMsg.charAt(i));
         }
 
         it = lst.listIterator(n);
