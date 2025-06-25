@@ -23,6 +23,7 @@ public class Main {
         } else if (dir.equals("D")) {
             if (it.hasNext()) {
                 it.next();
+                it.remove();
             }
             it.remove();
 
