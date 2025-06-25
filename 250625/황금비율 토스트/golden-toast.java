@@ -51,7 +51,12 @@ public class Main {
             fn(infos[i]);
         }
 
-        lst.forEach(x -> System.out.print(x + ""));
+        //출력
+        it = lst.listIterator();
+        while(it.hasNext()){
+            System.out.print(it.next());
+
+        }
 
 
     }
