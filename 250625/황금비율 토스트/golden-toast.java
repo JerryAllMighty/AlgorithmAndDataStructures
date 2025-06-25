@@ -21,7 +21,9 @@ public class Main {
                 it.next();
             }
         } else if (dir.equals("D")) {
-            it.next();
+            if (it.hasNext()) {
+                it.next();
+            }
             it.remove();
 
         } else if (dir.equals("P") && !chr.isEmpty()) {
