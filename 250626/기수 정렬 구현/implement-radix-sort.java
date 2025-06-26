@@ -5,28 +5,33 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = Integer.parseInt(sc.nextLine());
-        int[] nums = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[] answers = new int[n];
+        String[] nums = sc.nextLine().split(" ");
+
 
         //기수 정렬
-
+        String[] stored_arr = new String[n]; //매번 자릿수를 정렬하며 그 결과를 저장할 배열
         int pos = Integer.MIN_VALUE; //자릿수
         for (int i = 0; i < n; i++) {
-            pos = Math.max(pos, Integer.toString(nums[i]).length());
+            pos = Math.max(pos, nums[i].length());
+            stored_arr[i] = nums[i];
         }
-        int[] stored_arr = nums; //매번 자릿수를 정렬하며 그 결과를 저장할 배열
+
+
+        for (int i = 0; i < n; i++) {
+            String tempStr = stored_arr[i];
+            if (tempStr.length() != pos) {
+                for (int k = 0; k < pos - tempStr.length(); k++) {
+                    stored_arr[i] = "0" + stored_arr[i];
+                }
+            }
+        }
         //끝자리부터 0~9 순으로 정렬
         while (--pos >= 0) {
-            int[] temp = new int[n];
+            String[] temp = new String[n];
             int idx = 0;
             for (int j = 0; j < 10; j++) {
                 for (int i = 0; i < n; i++) { // 배열 각각의 자릿수
-                    String tempStr = Integer.toString(stored_arr[i]);
-                    if (tempStr.length() != pos + 1) {
-                        for (int k = 0; k < (pos + 1) - tempStr.length(); k++) {
-                            tempStr = "0" + tempStr;
-                        }
-                    }
+                    String tempStr = stored_arr[i];
                     String digit = tempStr.substring(pos, pos + 1);
                     if (digit.equals(Integer.toString(j))) {
                         temp[idx] = stored_arr[i];
@@ -36,10 +41,9 @@ public class Main {
             }
             stored_arr = temp;
         }
-        answers = stored_arr;
 
         for (int i = 0; i < n; i++) {
-            System.out.print(answers[i] + " ");
+            System.out.print(Integer.parseInt(stored_arr[i]) + " ");
         }
 
 
