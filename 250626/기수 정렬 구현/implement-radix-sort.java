@@ -21,7 +21,13 @@ public class Main {
             int idx = 0;
             for (int j = 0; j < 10; j++) {
                 for (int i = 0; i < n; i++) { // 배열 각각의 자릿수
-                    String digit = Integer.toString(stored_arr[i]).substring(pos, pos + 1);
+                    String tempStr = Integer.toString(stored_arr[i]);
+                    if (tempStr.length() != pos + 1) {
+                        for (int k = 0; k < (pos + 1) - tempStr.length(); k++) {
+                            tempStr = "0" + tempStr;
+                        }
+                    }
+                    String digit = tempStr.substring(pos, pos + 1);
                     if (digit.equals(Integer.toString(j))) {
                         temp[idx] = stored_arr[i];
                         idx++;
