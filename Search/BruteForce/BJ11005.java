@@ -1,4 +1,4 @@
-package CompleteSearch.BruteForce;
+package Search.BruteForce;
 
 import java.lang.reflect.Method;
 import java.util.Scanner;

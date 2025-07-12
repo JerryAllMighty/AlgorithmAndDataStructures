@@ -1,4 +1,4 @@
-package Programmers;
+package Uncategorized.Programmers;
 
 public class 공원산책 {
 

@@ -1,4 +1,4 @@
-package CompleteSearch.BruteForce;
+package Search.BruteForce;
 
 import java.util.ArrayList;
 import java.util.Arrays;

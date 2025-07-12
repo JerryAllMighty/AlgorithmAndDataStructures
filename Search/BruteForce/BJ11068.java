@@ -1,4 +1,4 @@
-package CompleteSearch.BruteForce;
+package Search.BruteForce;
 
 def is_palindrome(x, base):
     digit = []

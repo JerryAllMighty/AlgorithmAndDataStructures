@@ -1,4 +1,4 @@
-package Programmers;
+package Uncategorized.Programmers;
 
 public class 추억점수 {
     public static class Solution {
