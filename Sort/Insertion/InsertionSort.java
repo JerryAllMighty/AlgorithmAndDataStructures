@@ -1,4 +1,4 @@
-package Sort.Sort.Insertion;
+package Sort.Insertion;
 
 import java.util.ArrayList;
 import java.util.Arrays;

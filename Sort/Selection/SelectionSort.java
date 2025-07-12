@@ -1,4 +1,4 @@
-package Sort.Sort.Selection;
+package Sort.Selection;
 
 public class SelectionSort {
     /* 한국방송통신대학교 알고리즘 예제

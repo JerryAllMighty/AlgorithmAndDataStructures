@@ -1,8 +1,6 @@
-package Sort.Sort;
+package Sort;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class BJ10989 {
     public static void Test(String[] args) throws IOException {

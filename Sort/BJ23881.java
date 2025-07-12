@@ -1,6 +1,4 @@
-package Sort.Sort;
-
-import java.util.Scanner;
+package Sort;
 
 public class BJ23881 {
     /* 2024.03.09

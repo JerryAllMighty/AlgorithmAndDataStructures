@@ -1,4 +1,4 @@
-package Sort.Sort.Bubble;
+package Sort.Bubble;
 
 public class BubbleSort {
     public static void Test(String[] args) {
