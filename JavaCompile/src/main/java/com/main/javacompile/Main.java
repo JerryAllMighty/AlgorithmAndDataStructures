@@ -3,50 +3,61 @@ package com.main.javacompile;
 import java.util.*;
 
 public class Main {
-    //변수 선언
-    static ListIterator<String> it;
-    static List<String> lst = new ArrayList<>();
+    static String[][] arr;
 
-    static void fn(String[] encryptMsgArray) {
-        String encryptMsg = encryptMsgArray[0];
+    private static int countColor(int row, int col) {
+        if (row < 0 || row + 7 >= arr.length || col < 0 || col + 7 >= arr[0].length) {
+            return Integer.MAX_VALUE;
+        }
+        int result = 0;
+        int temp1 = 0;
+        String answerColor = arr[row][col];
+        for (int i = row; i < row + 8; i++) {
+            for (int j = col; j < col + 8; j ++) {
+                String color = arr[i][j];
+                if (!color.equals(answerColor)) {
+                    temp1++;
+                }
+                if(j != col + 7){
+                    answerColor = answerColor.equals("B") ? "W" : "B";
+                }
 
-        if (encryptMsg.equals("L")) {
-            if (it.hasPrevious()) {
-                it.previous();
-            }
-        } else if (encryptMsg.equals("R")) {
-            if (it.hasNext()) {
-                it.next();
-            }
-        } else if (encryptMsg.equals("D")) {
-            if (it.hasNext()) {
-                it.next();
-                it.remove();
-            }
-        } else if (encryptMsg.equals("P")) {
-            if (encryptMsgArray.length > 1) {
-                it.add(encryptMsgArray[1].toString());
             }
         }
+
+        int temp2 = 0;
+        String newAnswerColor = arr[row][col].equals("B") ? "W" : "B";
+        for (int i = row; i < row + 8; i++) {
+            for (int j = col; j < col + 8; j ++) {
+                String color = arr[i][j];
+                if (!color.equals(newAnswerColor)) {
+                    temp2++;
+                }
+                if(j != col + 7){
+                    newAnswerColor = newAnswerColor.equals("B") ? "W" : "B";
+                }
+            }
+        }
+        return Math.min(temp1, temp2);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] cntList = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int n = cntList[0];
-        int m = cntList[1];
-
-        //변수 초기화
-        String[] targetMsg = sc.nextLine().split("");
+        int[] info = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int m = info[1];
+        arr = new String[n][m];
         for (int i = 0; i < n; i++) {
-            lst.add(targetMsg[i]);
+            String[] row = sc.nextLine().split("");
+            arr[i] = row;
         }
-        it = lst.listIterator(n);
-        for (int i = 0; i < m; i++) {
-            String[] encryptMsgArray = sc.nextLine().split(" ");
-            fn(encryptMsgArray);
-        }
+        int answer = Integer.MAX_VALUE;
 
-        lst.forEach(x -> System.out.print(x + ""));
+        for (int i = 0; i + 7 < n; i++) {
+            for (int j = 0; j + 7 < m; j++) {
+                answer = Math.min(answer, countColor(i, j));
+            }
+        }
+        System.out.println(answer);
     }
 }
