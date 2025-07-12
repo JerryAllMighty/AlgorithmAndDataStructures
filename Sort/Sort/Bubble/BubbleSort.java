@@ -1,4 +1,4 @@
-package KNOU;
+package Sort.Sort.Bubble;
 
 public class BubbleSort {
     public static void Test(String[] args) {

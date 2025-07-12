@@ -1,4 +1,4 @@
-package KNOU;
+package Sort.Sort.Insertion;
 
 import java.util.ArrayList;
 import java.util.Arrays;
