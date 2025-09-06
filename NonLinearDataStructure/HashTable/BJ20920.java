@@ -1,4 +1,4 @@
-package LinearDataStructure.Hash;
+package NonLinearDataStructure.HashTable;
 
 import java.io.BufferedReader;
 import java.io.IOException;

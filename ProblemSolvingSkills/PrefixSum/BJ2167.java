@@ -1,4 +1,4 @@
-package Sum;
+package ProblemSolvingSkills.PrefixSum;
 
 import java.io.BufferedReader;
 import java.io.IOException;
