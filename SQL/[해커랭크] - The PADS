@@ -1,0 +1,35 @@
+/*
+Enter your query here.
+*/
+WITH CTE_NAME AS (
+    select 
+    CONCAT(T1.name, '(', SUBSTRING(T1.OCCUPATION, 1,1) ,')') AS ST,
+    1 as qryTp
+    , ROW_NUMBER() OVER (ORDER BY T1.NAME ASC) AS RN
+    from OCCUPATIONS T1
+)
+, CTE AS (
+    select CONCAT('There are a total of ', T1.CNT,' ', LOWER(T1.OCCUPATION), 's.') AS ST
+    , 2 as qryTp
+    , ROW_NUMBER() OVER (ORDER BY T1.CNT ASC) AS RN
+    FROM (
+        select OCCUPATION, COUNT(1) AS CNT
+        FROM OCCUPATIONS
+        group by OCCUPATION
+    ) T1
+)
+SELECT ST FROM (
+select 
+*
+from CTE_NAME T1
+UNION
+select 
+*
+FROM CTE T2
+ORDER BY qryTp ASC, RN ASC
+) T1
+
+-- select 
+--     *
+--     from OCCUPATIONS T1
+--     order by T1.name asc
