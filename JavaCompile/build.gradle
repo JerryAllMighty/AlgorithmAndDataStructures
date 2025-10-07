@@ -4,6 +4,8 @@ plugins {
   id 'org.javamodularity.moduleplugin' version '1.8.12'
   id 'org.openjfx.javafxplugin' version '0.0.13'
   id 'org.beryx.jlink' version '2.25.0'
+  id 'org.springframework.boot' version '3.2.8'
+  id 'io.spring.dependency-management' version '1.1.5'
 }
 
 group 'com.main'
@@ -35,9 +37,13 @@ javafx {
 }
 
 dependencies {
-
+//  implementation 'org.springframework.boot:spring-boot-devtools'
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//  implementation 'org.springframework.boot:spring-boot-starter-web'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
