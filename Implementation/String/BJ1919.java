@@ -1,5 +1,8 @@
 package Implementation.String;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -30,3 +33,44 @@ public class Test {
 
     }
 }
+
+
+//2025.10.26 다른 문제풀이 초안 (정답아님)
+//public class Main {
+//
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        char[] firstInputArray = br.readLine().toCharArray();
+//        char[] secondInputArray = br.readLine().toCharArray();
+//        int firstDistinctStringCount = 0;
+//        int secondDistinctStringCount = 0;
+//
+//        for (char c : firstInputArray) {
+//            boolean isExist = false;
+//            for (char cmp : secondInputArray) {
+//                if (c == cmp) {
+//                    isExist = true;
+//                }
+//            }
+//            if (!isExist) {
+//                firstDistinctStringCount++;
+//            }
+//        }
+//
+//        for (char c : secondInputArray) {
+//            boolean isExist = false;
+//            for (char cmp : firstInputArray) {
+//                if (c == cmp) {
+//                    isExist = true;
+//                }
+//            }
+//            if (!isExist) {
+//                secondDistinctStringCount++;
+//            }
+//        }
+//
+//        System.out.println(firstDistinctStringCount + secondDistinctStringCount);
+//    }
+//}
+
