@@ -1,5 +1,8 @@
 package Implementation.String;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 
@@ -53,3 +56,38 @@ public class Test {
 
     }
 }
+
+//2025.10.26
+//package com.main.javacompile;
+//
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//import java.util.Arrays;
+//
+//
+//public class Main {
+//
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int[] currentTimeInput = Arrays.stream(br.readLine().split(":")).mapToInt(Integer::parseInt).toArray();
+//        int[] targetTimeInput = Arrays.stream(br.readLine().split(":")).mapToInt(Integer::parseInt).toArray();
+//
+//        int totalSecondsOfCurrenttime = (currentTimeInput[0] * 3600) +  (currentTimeInput[1] * 60) +  (currentTimeInput[2]);
+//        int totalSecondsOfTargetTime = (targetTimeInput[0] * 3600) +  (targetTimeInput[1] * 60) +  (targetTimeInput[2]);
+//
+//        int totalSecondsGap = totalSecondsOfTargetTime > totalSecondsOfCurrenttime ? totalSecondsOfTargetTime - totalSecondsOfCurrenttime : (totalSecondsOfTargetTime + (24*3600)) - totalSecondsOfCurrenttime;
+//
+//        int hour = totalSecondsGap / 3600;
+//        totalSecondsGap %= 3600;
+//
+//
+//        int minute = totalSecondsGap / 60;
+//        totalSecondsGap %= 60;
+//
+//        int second = totalSecondsGap;
+//
+//        System.out.println(String.format("%02d:%02d:%02d", hour, minute, second));
+//    }
+//}
+
