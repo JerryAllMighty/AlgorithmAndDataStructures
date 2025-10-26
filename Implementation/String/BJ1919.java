@@ -123,5 +123,42 @@ public class Test {
 //    }
 //}
 
+//2025.10.26 정답 코드 추가
+//package com.main.javacompile;
+//
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//
+//public class Main {
+//
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        char[] firstInput = br.readLine().toCharArray();
+//        char[] secondInput = br.readLine().toCharArray();
+//
+//        int[] firstInputCount = new int[26];
+//        int[] secondInputCount = new int[26];
+//
+//        // 각 알파벳 마다 몇 개가 있는지
+//        for (char c : firstInput) {
+//            firstInputCount[c - 'a']++;
+//        }
+//
+//        for (char c : secondInput) {
+//            secondInputCount[c - 'a']++;
+//        }
+//
+//        int answer = 0;
+//        for (int i = 0; i < 26; i++) {
+//            answer += Math.abs(firstInputCount[i] - secondInputCount[i]);
+//        }
+//        System.out.println(answer);
+//    }
+//}
+
+
+
 
 
