@@ -1,4 +1,5 @@
 package Implementation;
+
 import java.util.Scanner;
 
 public class BJ2744 {
@@ -45,4 +46,21 @@ public class BJ2744 {
 //    System.out.println(sb);
 //    sc.close();
 //  }
+//}
+
+//2025.10.26 다른 문제풀이
+//public static void main(String[] args) throws IOException {
+//  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//  char[] input = br.readLine().toCharArray();
+//  StringBuilder sb = new StringBuilder();
+//  for (char c : input) {
+//    if (Character.isUpperCase(c)) {
+//      sb.append(Character.toLowerCase(c));
+//    } else {
+//      sb.append(Character.toUpperCase(c));
+//    }
+//
+//  }
+//  System.out.println(sb.toString());
+//
 //}
