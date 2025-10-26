@@ -74,3 +74,54 @@ public class Test {
 //    }
 //}
 
+//package com.main.javacompile;
+//
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//
+//public class Main {
+//
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        char[] firstInput = br.readLine().toCharArray();
+//        char[] secondInput = br.readLine().toCharArray();
+//
+//        int answer = 0;
+//
+//        for (char c : firstInput) {
+//            boolean isExist = false;
+//            for (char ch : secondInput) {
+//                if (c == ch) {
+//                    isExist = true;
+//                    break;
+//                }
+//            }
+//            if (!isExist) {
+//                answer++;
+//            }
+//
+//        }
+//
+//        for (char c : secondInput) {
+//            boolean isExist = false;
+//            for (char ch : firstInput) {
+//                if (c == ch) {
+//                    isExist = true;
+//                    break;
+//                }
+//            }
+//            if (!isExist) {
+//                answer++;
+//            }
+//
+//        }
+//
+//        System.out.println(answer);
+//
+//    }
+//}
+
+
+
