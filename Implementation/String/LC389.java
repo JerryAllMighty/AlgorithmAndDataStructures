@@ -21,3 +21,16 @@ public class LC389 {
 
     }
 }
+
+//2025.10.29 다른 사람 문제 풀이 추가
+//public static void main(String[] args) throws IOException {
+//    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//    String s = br.readLine();
+//    String t = br.readLine();
+//
+//    char c = 0;
+//    for(char cs : s.toCharArray()) c ^= cs;
+//    for(char ct : t.toCharArray()) c ^= ct;
+//    System.out.println(c);
+//}
