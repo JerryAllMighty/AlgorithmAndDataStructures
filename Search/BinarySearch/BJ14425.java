@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class BJ14425 {
+    //2025.10.30 통과한 문제 풀이 케이스
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -25,7 +26,6 @@ public class BJ14425 {
         for (int i = 0; i < m; i++) {
             String mInput = br.readLine();
             //집합 s에 포함되어있는 것이 몇 개인지
-//            answer += binarySearch(s, mInput) == true ? 1 : 0;
             int index = Arrays.binarySearch(s, mInput);
             if (index >= 0) {
                 answer++;
@@ -36,46 +36,18 @@ public class BJ14425 {
 
     }
 }
-//2025.10.30 내 개인풀이
-//TODO : 문자열 정렬하는 다른 방법 알아놓기
-//package com.main.javacompile;
-//
-//import java.io.BufferedReader;
-//import java.io.IOException;
-//import java.io.InputStreamReader;
-//import java.util.Arrays;
-//
+//2025.10.30 내 개인풀이 (실패한 케이스) (이후 성공)
+// 문자열 비교는 Comparable 인터페이스를 String이 구현하고 있기 때문에 compareTo를 사용가능하다
 //public class Main {
-//
-//    static int compareString(String s1, String s2) {
-//        for (int i = 0; i < s1.length(); i++) {
-//            char c = s1.charAt(i);
-//            if (s2.length() >= (i + 1)) {
-//                char ch = s2.charAt(i);
-//                if (c > ch) {
-//                    return 1;
-//                } else if (c < ch) {
-//                    return -1;
-//                } else {
-//                    continue;
-//                }
-//            }else{
-//                return 1;
-//            }
-//
-//        }
-//        return 0;
-//
-//    }
 //
 //    static boolean binarySearch(String[] arr, String targetString) {
 //        int l = 0;
 //        int r = arr.length - 1;
 //        int m = (l + r) / 2;
 //        while (l <= r) {
-//            if (compareString(arr[m], targetString) < 0) {
+//            if (arr[m].compareTo(targetString) < 0) {
 //                l = m + 1;
-//            } else if (compareString(arr[m], targetString) > 0) {
+//            } else if (arr[m].compareTo(targetString) > 0) {
 //                r = m - 1;
 //            } else {
 //                return true;
@@ -107,10 +79,6 @@ public class BJ14425 {
 //            String mInput = br.readLine();
 //            //집합 s에 포함되어있는 것이 몇 개인지
 //            answer += binarySearch(s, mInput) == true ? 1 : 0;
-////            int index = Arrays.binarySearch(s, mInput);
-////            if (index >= 0) {
-////                answer++;
-////            }
 //        }
 //
 //        System.out.println(answer);
