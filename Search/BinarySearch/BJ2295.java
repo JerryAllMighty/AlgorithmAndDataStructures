@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+//TODO : 해당 문제 풀이 마무리 필요 (통과 못함)
 public class BJ2295 {
     static int[] nums;
 
