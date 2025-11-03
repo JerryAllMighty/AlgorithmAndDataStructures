@@ -22,7 +22,7 @@ public class BJ2470 {
         for (int i = 0; i < n; i++) {
             int pivot = arr[i];
 
-            int l = i+1;
+            int l = i + 1;
             int r = n - 1;
             int m = (l + r) / 2;
 
@@ -32,9 +32,8 @@ public class BJ2470 {
                 } else if (pivot + arr[m] < 0) {
                     l = m + 1;
                 } else {
-                    answers[0] = Math.min(pivot, arr[m]);
-                    answers[1] = Math.max(pivot, arr[m]);
-                    break;
+                    System.out.println(Math.min(pivot, arr[m]) + " " + Math.max(pivot, arr[m]));
+                    System.exit(0);
                 }
 
                 if (gap > Math.abs((pivot + arr[m]))) {
