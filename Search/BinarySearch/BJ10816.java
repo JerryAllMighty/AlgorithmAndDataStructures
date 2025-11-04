@@ -21,10 +21,10 @@ public class BJ10816 {
             int l = 0;
             int r = n - 1;
             int mid = (l + r) / 2;
-            int index = n - 1;
+            int index = n;
             //Upper Bound
             while (l <= r) {
-                if (arr[mid] < target) {
+                if (arr[mid] > target) {
                     r = mid - 1;
                     index = Math.min(index, mid);
                 } else {
@@ -37,26 +37,18 @@ public class BJ10816 {
             int l2 = 0;
             int r2 = n - 1;
             int mid2 = (l2 + r2) / 2;
-            int index2 = 0;
+            int index2 = n;
             while (l2 <= r2) {
-                if (arr[mid2] < target) {
-                    l2 = mid2 + 1;
-                    index2 = Math.max(index2, mid2);
-                } else {
+                if (arr[mid2] >= target) {
                     r2 = mid2 - 1;
+                    index2 = mid2;
+                } else {
+                    l2 = mid2 + 1;
                 }
                 mid2 = (l2 + r2) / 2;
             }
 
-            answers[i] = Integer.toString(mid - (mid2 + 1));
-
-//            int count = 0;
-//            for (int j = minimumIndex; j < arr.length; j++) {
-//                if (arr[j] == target) {
-//                    count++;
-//                }
-//            }
-//            answers[i] = Integer.toString(count);
+            answers[i] = Integer.toString(index - index2);
         }
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
