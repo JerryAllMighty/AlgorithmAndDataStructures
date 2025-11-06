@@ -3,22 +3,23 @@ package Search.BinarySearch;
 import java.io.*;
 import java.util.Arrays;
 
+//TODO : 해당 클래스 다시 풀어보기
 public class BJ2110 {
     static int[] houses;
     static int c;
 
-    static int getPossibleCount(int distance) {
-//        int count = 0;
-//        int index = 0;
-//        int nextIndex = end + 1;
-//        while (nextIndex <= houses.length) {
-//            if (houses[nextIndex] - houses[index] > distance) {
-//                count++;
-//                index = nextIndex;
-//            }
-//            nextIndex++;
-//        }
-//        return count;
+    static int getPossibleCount(int end, int distance) {
+        int count = 0;
+        int index = 0;
+        int nextIndex = end + 1;
+        while (nextIndex <= houses.length) {
+            if (houses[nextIndex] - houses[index] > distance) {
+                count++;
+                index = nextIndex;
+            }
+            nextIndex++;
+        }
+        return count;
     }
 
     public static void main(String[] args) throws IOException {
@@ -39,11 +40,11 @@ public class BJ2110 {
         Arrays.sort(houses);
 
         //차이
-        int l = 0;
-        int r = n - 1;
+        int l = houses[0];
+        int r = houses[n - 1] - houses[0];
         while (l <= r) {
             int mid = (l + r) / 2;
-            int distance = getClosestDistance(mid);
+//            int distance = getPossibleCount(mid);
 
 
         }
