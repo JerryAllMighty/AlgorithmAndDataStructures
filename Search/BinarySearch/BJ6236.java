@@ -56,3 +56,59 @@ public class BJ6236 {
         br.close();
     }
 }
+
+//2025.11.07 다시 문제 풀이 (반례 통과 못함)
+
+//static int[] budgets;
+//static int m;
+//
+//static boolean isPossible(int draw) {
+//    int currentMoney = draw;
+//    int count = 1;
+//    for (int budget : budgets) {
+//        if (budget > draw) {
+//            return false;
+//        }
+//        if (budget < currentMoney) {
+//            currentMoney -= budget;
+//        } else {
+//            currentMoney = draw - budget;
+//            count++;
+//        }
+//    }
+//    return count >= m;
+//}
+//
+//public static void main(String[] args) throws IOException {
+//    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//
+//    int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+//    int n = input[0];
+//    m = input[1];
+//
+//    budgets = new int[n];
+//    for (int i = 0; i < n; i++) {
+//        int num = Integer.parseInt(br.readLine());
+//        budgets[i] = num;
+//    }
+//
+//    int l = 1;
+//    int r = n * 10000;
+//    int mid = (l + r) / 2;
+//    int answer = Integer.MAX_VALUE;
+//    while (l <= r) {
+//        if (!isPossible(mid)) {
+//            l = mid + 1;
+//        } else {
+//            answer = Math.min(answer, mid);
+//            r = mid - 1;
+//        }
+//        mid = (l + r) / 2;
+//    }
+//
+//    bw.write(Integer.toString(answer));
+//    bw.flush();
+//    bw.close();
+//    br.close();
+//}
