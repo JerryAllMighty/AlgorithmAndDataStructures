@@ -2,18 +2,36 @@ package Search.DFS;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.Stack;
 
 public class BJ11724 {
 
     static int[][] graph;
     static boolean[] visited;
 
+//    static void dfs(int node) {
+//        visited[node] = true;
+//        for (int i = 1; i < graph.length; i++) {
+//            if (graph[node][i] != 0 && !visited[i]) {
+//                dfs(i);
+//            }
+//        }
+//    }
+
     static void dfs(int node) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(node);
         visited[node] = true;
-        for (int i = 1; i < graph.length; i++) {
-            if (graph[node][i] != 0 && !visited[i]) {
-                dfs(i);
+        while (!stack.isEmpty()) {
+            int now = stack.pop();
+            for (int i = 1; i < graph.length; i++) {
+                if (graph[now][i] != 0 && !visited[i]) {
+                    stack.push(i);
+                    visited[i] = true;
+                }
+
             }
+
         }
     }
 
