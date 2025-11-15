@@ -63,3 +63,48 @@ public class BJ11724 {
         br.close();
     }
 }
+
+/*
+ * 2025.11.15 2회차 풀이, 통과
+ *
+    static int[][] graph;
+    static boolean[] visited;
+
+    static void dfs(int node) {
+        visited[node] = true;
+        for (int i = 1; i < graph.length; i++) {
+            if (graph[node][i] != 0 && !visited[i]) {
+                dfs(i);
+            }
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = input[0];
+        int m = input[1];
+        graph = new int[n + 1][n + 1];
+        visited = new boolean[n + 1];
+        for (int i = 0; i < m; i++) {
+            int[] nodes = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            graph[nodes[0]][nodes[1]] = 1;
+            graph[nodes[1]][nodes[0]] = 1;
+        }
+
+        int answer = 0;
+        for (int i = 1; i <= n; i++) {
+            if (!visited[i]) {
+                dfs(i);
+                answer++;
+            }
+        }
+
+        bw.write(Integer.toString(answer));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
