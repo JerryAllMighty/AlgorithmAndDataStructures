@@ -44,3 +44,13 @@ public class BJ2294 {
         br.close();
     }
 }
+/*
+* 2025.11.17 정답 코드 추가
+* for (int i = n - 1; i >= 0; i--) {
+            if (k >= values[i]) {
+                answer += moneyLeft / values[i];
+                moneyLeft %= values[i];
+            }
+
+        }
+ */
