@@ -57,3 +57,38 @@ public class BJ12865 {
         br.close();
     }
 }
+
+/*
+* 2025.11.19
+*
+    static int[] dp;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = input[0];
+        int k = input[1];
+
+        //해당 무게를 만드는 가치합의 최댓값
+        int[] dp = new int[k + 1];
+        for (int i = 0; i < n; i++) {
+            int[] nums = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            int w = nums[0];
+            int v = nums[1];
+            for (int j = k; j >= w; j--) {
+                int a = dp[j];
+                int b = dp[j - w];
+                int c = j - w;
+                int d = dp[j - w] + v;
+                dp[j] = Math.max(dp[j], dp[j - w] + v);
+            }
+        }
+
+        bw.write(Integer.toString(dp[k]));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
