@@ -80,3 +80,47 @@ class BJ10431
 //        sc.close();
 //    }
 //}
+
+/*
+* 2025.11.21 2번쨰 풀이, 25분 안에 못 품
+*
+    static int countStepBack(int[] arr) {
+        int result = 0;
+        int l = 1;
+        int r = 2;
+
+        while () {
+            for (int i = 0; i < r; i++) {
+                if (arr[i] > arr[r]) {
+                    int[] temp = new int[20];
+                    temp[0] = arr[r];
+                    for (int j = 0; j < 19; j++) {
+                        temp[j + 1] = arr[j];
+                    }
+                    result += r;
+                }
+
+            }
+
+            r++;
+
+
+        }
+        return result;
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int p = Integer.parseInt(br.readLine());
+        for (int i = 0; i < p; i++) {
+            int[] arr = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            System.out.println(arr[0] + " " + countStepBack(arr));
+        }
+
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
