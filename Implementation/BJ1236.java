@@ -56,3 +56,59 @@ public class BJ1236 {
         sc.close();
     }
 }
+
+/*
+* 2025.11.21 2번째 풀이, 통과 완료
+*
+    static int[] dp;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = input[0];
+        int m = input[1];
+        String[][] arr = new String[n][m];
+        for (int i = 0; i < n; i++) {
+            String[] row = br.readLine().split("");
+            arr[i] = row;
+        }
+
+        int[] rows = new int[n];
+        int[] columns = new int[m];
+        for (int i = 0; i < n; i++) {
+            rows[i] = i;
+        }
+        for (int i = 0; i < m; i++) {
+            columns[i] = i;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if ("X".equals(arr[i][j])) {
+                    rows[i] = -1;
+                    columns[j] = -1;
+                }
+            }
+        }
+        int answer = Math.max(n, m);
+        int rowCount = 0;
+        int colCount = 0;
+        for (int i = 0; i < n; i++) {
+            if (rows[i] != -1) {
+                rowCount++;
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            if (columns[i] != -1) {
+                colCount++;
+            }
+        }
+        answer = Math.max(rowCount, colCount);
+        bw.write(Integer.toString(answer));
+
+
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
