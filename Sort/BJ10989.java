@@ -62,3 +62,25 @@ public class BJ10989 {
 //        sc.close();
 //    }
 //}
+
+/*
+* 2025.11.22 세번쨰 문제 풀이, 통과
+*
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int n = Integer.parseInt(br.readLine());
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            int num = Integer.parseInt(br.readLine());
+            arr[i] = num;
+        }
+        Arrays.sort(arr);
+        for (int i : arr) {
+            bw.write(Integer.toString(i) + "\n");
+        }
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
