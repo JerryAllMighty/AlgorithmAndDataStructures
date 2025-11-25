@@ -34,7 +34,7 @@ public class BJ11660 {
                     answer += prefixSum[j][y2 - 1];
                 }
             }
-            bw.write(String.valueOf(answer) + "\n");
+            bw.write(answer + "\n");
         }
         bw.flush();
         bw.close();
