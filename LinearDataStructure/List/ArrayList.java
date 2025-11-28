@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayList {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(4);
+        List<Integer> list = new java.util.ArrayList<>(4);
         // ArrayList는 initial capacity를 지정할 수 있습니다.
         // 지정하지 않는다면 default capacity만큼의 배열이 생성됩니다.
 

@@ -4,10 +4,11 @@ import java.util.*;
 
 public class LinkedList {
     public static void main (String[] args) {
-        List<Integer> list = new LinkedList<>();
+//        List<Integer> list = new LinkedList<>();
         // 굳이 다형성을 사용할 필요가 없다면 아래와 같이 인스턴스를 만들어
         // LinkedList의 추가적인 메서드인 addFirst/Last 등을 사용할 수 있습니다.
-        // LinkedList<Integer> list = new LinkedList<>();
+//         LinkedList<Integer> list = new LinkedList<>();
+        java.util.LinkedList<Integer> list = new java.util.LinkedList<>();
 
         // LinkedList의 add: O(1)
         list.add(1);                // [1]
