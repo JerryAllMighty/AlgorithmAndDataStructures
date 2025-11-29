@@ -41,13 +41,11 @@ public class BJ1406 {
             }
         }
 
-
-        while (iterator.hasPrevious()) {
-            iterator.previous();
+        StringBuilder sb = new StringBuilder();
+        for (String s : list) {
+            sb.append(s);
         }
-        while (iterator.hasNext()) {
-            bw.write(iterator.next());
-        }
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
