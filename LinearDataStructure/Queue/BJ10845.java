@@ -1,4 +1,4 @@
-import com.main.javacompile.Main;
+package LinearDataStructure.Queue;
 
 import java.io.*;
 public class BJ10845 {
@@ -60,7 +60,7 @@ public class BJ10845 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
-        Main.Queue queue = new Main.Queue(n);
+        Queue queue = new Queue(n);
         for (int i = 0; i < n; i++) {
             String[] command = br.readLine().split(" ");
             if ("push".equals(command[0])) {
