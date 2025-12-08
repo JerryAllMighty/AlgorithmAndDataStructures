@@ -19,7 +19,7 @@ public class BJ10814 {
             Arrays.sort(arr, new Comparator<String[]>() {
                 @Override
                 public int compare(String[] o1, String[] o2) {
-                    return Integer.parseInt(o1[0]) - Integer.parseInt(o2[0]);
+                    return o1[0].compareTo(o2[0]);
                 }
             });
             for (String[] i : arr) {
