@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+ * 2025.12.09 시간복잡도 개선 : O(n * n!) > O(n! /m!)
+ */
 public class BJ15655 {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static int[] arr;
@@ -20,7 +23,7 @@ public class BJ15655 {
 
     }
 
-    public static void recursive(List<Integer> selected) throws IOException {
+    public static void recursive(List<Integer> selected, int start) throws IOException {
         if (selected.size() == m) {
             if (!isAscending(selected)) {
                 return;
@@ -32,10 +35,10 @@ public class BJ15655 {
 //            selected.remove(m - 1);
             return;
         }
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = start; i < arr.length; i++) {
             if (!selected.contains(arr[i])) {
                 selected.add(arr[i]);
-                recursive(selected);
+                recursive(selected, i + 1);
                 selected.remove(selected.size() - 1);
             }
         }
@@ -53,7 +56,7 @@ public class BJ15655 {
         for (int i = 0; i < n; i++) {
             List<Integer> selected = new ArrayList<>();
             selected.add(arr[i]);
-            recursive(selected);
+            recursive(selected, i + 1);
         }
         bw.flush();
         bw.close();
