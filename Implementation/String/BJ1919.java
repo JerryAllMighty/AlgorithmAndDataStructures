@@ -1,36 +1,43 @@
 package Implementation.String;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+package com.main.javacompile;
 
+import java.io.*;
+/*
+ * 2026.01.14 통과
+ */
 
-public class Test {
-    public static List<Integer> isExist = new ArrayList<>();
-    public static void containsCharThenRemove(char c, char[] charList) {
-        for (int i = 0; i < charList.length; i++) {
-            char eachChar = charList[i];
-            if (eachChar == c && !isExist.contains(i)) {
-                isExist.add(i);
-                break;
-            }
+public class BJ1919 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        String wordA = br.readLine();
+        String wordB = br.readLine();
+
+        String wordACompare = "";
+        String wordBCompare = "";
+
+        for (int i = 0; i < wordA.length(); i++) {
+            wordACompare += String.valueOf(wordA.charAt(i));
         }
-    }
-
-    public static void Test(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        char[] a = sc.nextLine().toCharArray();
-        char[] b = sc.nextLine().toCharArray();
-        for (int i = 0; i < a.length; i++) {
-            char c = a[i];
-            containsCharThenRemove(c, b);
+        for (int i = 0; i < wordB.length(); i++) {
+            wordBCompare += String.valueOf(wordB.charAt(i));
         }
-        System.out.println((b.length - isExist.size()) + (a.length - isExist.size()));
+        int answer = 0;
+        for (int i = 0; i < wordA.length(); i++) {
+            wordBCompare = wordBCompare.replaceFirst(String.valueOf(wordA.charAt(i)), "");
+        }
+        answer += wordBCompare.length();
 
+        for (int i = 0; i < wordB.length(); i++) {
+            wordACompare = wordACompare.replaceFirst(String.valueOf(wordB.charAt(i)), "");
+        }
+        answer += wordACompare.length();
+        bw.write(String.valueOf(answer));
+        bw.flush();
+        bw.close();
+        br.close();
     }
 }
 
