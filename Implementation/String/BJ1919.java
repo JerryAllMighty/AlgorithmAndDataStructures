@@ -1,7 +1,5 @@
 package Implementation.String;
 
-package com.main.javacompile;
-
 import java.io.*;
 /*
  * 2026.01.14 통과
