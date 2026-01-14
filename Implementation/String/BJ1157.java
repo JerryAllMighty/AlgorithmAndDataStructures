@@ -1,47 +1,72 @@
 package Implementation.String;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
+class BJ1157 {
+    
+/*
+ * 2026.01.14 문제 풀이 , 통과 완료
+ * package com.main.javacompile;
 
+import java.io.*;
+import java.util.HashMap;
 
-public class Test {
-    public static void Test(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        char[] input = sc.nextLine().toLowerCase().toCharArray();
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        char[] word = br.readLine().toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();
-        for (int i = 0; i < input.length; i++) {
-            char c = input[i];
-            if (map.get(c) == null) {
-                map.put(c, 1);
+        int answerCount = 0;
+        String answer = "";
+        for (char c : word) {
+            if (map.get(Character.toLowerCase(c)) == null) {
+                map.put(Character.toLowerCase(c), 1);
+//                if (answerCount == 0) {
+//                    answerCount = 1;
+//                    answer = String.valueOf(Character.toUpperCase(c));
+//                }
             } else {
-                int val = map.get(c);
-                map.put(c, val + 1);
+                int value = map.get(Character.toLowerCase(c)) + 1;
+//                if (answerCount == value) {
+//                    answer = "?";
+//                } else if (value > answerCount) {
+//                    answer = String.valueOf(Character.toUpperCase(c));
+//                    answerCount = value;
+//                }
+                map.put(Character.toLowerCase(c), value);
+            }
+        }
+        for (Character c : map.keySet()) {
+            if(map.get(c) > answerCount){
+                answer = String.valueOf(Character.toUpperCase(c));
+                answerCount = map.get(c);
+            }else if(map.get(c) == answerCount){
+                answer = "?";
             }
 
         }
-        int maxNum = 0;
-        String maxKey = "";
-        for (Character key : map.keySet()) {
-            int val = map.get(key);
-            if (val >= maxNum) {
-                maxNum = val;
-                maxKey = key.toString();
-            }
-        }
-        for (Character key : map.keySet()) {
-            int val = map.get(key);
-            if (val == maxNum && !key.toString().equals(maxKey)) {
-                maxKey = "?";
-                break;
-            }
-        }
 
-        System.out.println(maxKey.toUpperCase());
-
+        bw.write(answer);
+        bw.flush();
+        bw.close();
+        br.close();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
 
 //2025.10.26 다른 문제풀이 추가
 //package com.main.javacompile;
@@ -105,4 +130,4 @@ public class Test {
 //
 //    }
 //}
-
+}
