@@ -26,6 +26,34 @@ public class BJ11727 {
         br.close();
     }
 }
+/*
+ * 2026.01.16 개인문제풀이, 통과 완료
+ * static BigDecimal[] cache;
+
+    static BigDecimal dp(int n) {
+        if (cache[n] != null) {
+            return cache[n];
+        } else {
+            BigDecimal result = dp(n - 1).add(dp(n - 2).multiply(BigDecimal.valueOf(2)));
+            cache[n] = result;
+            return result;
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int n = Integer.parseInt(br.readLine());
+        cache = new BigDecimal[1001];
+        cache[1] = BigDecimal.valueOf(1);
+        cache[2] = BigDecimal.valueOf(3);
+        BigDecimal answer = dp(n);
+        bw.write(String.valueOf(answer.divideAndRemainder(BigDecimal.valueOf(10007))[1].intValue()));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+ */
 
 /*
 * 2025.11.20 2번째 풀이, 개인풀이 통과
