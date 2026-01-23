@@ -4,6 +4,47 @@ import java.io.*;
 import java.util.Arrays;
 
 public class BJ2294 {
+    /*
+    * 2026.01.23 개인 문제 풀이, 40분, 통과 못 함
+    *  public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int k = info[1];
+        int[] coins = new int[n];
+        int[] dp = new int[100001];
+        for (int i = 0; i < n; i++) {
+            int coin = Integer.parseInt(br.readLine());
+            coins[i] = coin;
+            dp[coin] = 1;
+        }
+        for (int i = 1; i <= k; i++) {
+            for (int j = 0; j < n; j++) {
+                int coin = coins[j];
+                if (i < coin || coin > k) {
+                    continue;
+                }
+                int a = dp[i];
+                int b = dp[i - coin];
+                int c = dp[coin];
+                if (dp[i] == 0) {
+                    if (dp[i - coin] != 0 && dp[coin] != 0) {
+                        dp[i] = dp[i - coin] + dp[coin];
+                    }
+                } else {
+                    dp[i] = Math.min(dp[i], dp[i - coin] + dp[coin]);
+                }
+
+            }
+        }
+        int answer = dp[k] != 0 ? dp[k] : -1;
+        bw.write(String.valueOf(answer));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
 
 
     public static void main(String[] args) throws IOException {
