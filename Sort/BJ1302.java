@@ -5,6 +5,37 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class BJ1302 {
+    //TODO : map 정렬시 객체를 활용하는 법 테스트해보기
+    /*
+    * 2026.01.26 개인 문제 풀이 통과 못함
+    * public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int n = Integer.parseInt(br.readLine());
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
+        for (int i = 0; i < n; i++) {
+            String title = br.readLine();
+            int value = treeMap.getOrDefault(title, 0);
+            if (value == 0) {
+                treeMap.put(title, 1);
+            } else {
+                treeMap.put(title, ++value);
+            }
+        }
+        List<String> list = new ArrayList<>();
+        for (String s : treeMap.keySet()) {
+            int val = treeMap.get(s);
+            if (val == treeMap.get(treeMap.lastKey())) {
+                list.add(s);
+            }
+        }
+        Collections.sort(list);
+        bw.write(String.valueOf(list.get(0)));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
 
     static Book[] list;
 
