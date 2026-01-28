@@ -4,6 +4,68 @@ import java.io.*;
 import java.util.Arrays;
 
 public class BJ6236 {
+    /*
+    * 2026.01.28 개인 문제 풀이, 틀림
+    *  static int[] spendings;
+
+    static int binarySearch(int m) {
+        int l = 0;
+        int r = 100000;
+        int mid = (l + r) / 2;
+        while (l <= r) {
+            mid = (l + r) / 2;
+            int count = countMoneyDraw(mid);
+            if (count <= m) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
+        }
+        return mid;
+
+    }
+
+    static int countMoneyDraw(int money) {
+        int count = 1;
+        int index = 0;
+        int currentMoney = money;
+        while (index < spendings.length) {
+            int moneyToSpend = spendings[index];
+            if (moneyToSpend <= currentMoney) {
+                currentMoney -= moneyToSpend;
+            } else {
+                if (money < moneyToSpend) {
+                    int mod = moneyToSpend / money;
+                    count += ++mod;
+                    currentMoney = (money * mod) - moneyToSpend;
+                } else {
+                    count++;
+                    currentMoney = money - moneyToSpend;
+                }
+
+            }
+            index++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = input[0];
+        int m = input[1];
+        spendings = new int[n];
+        for (int i = 0; i < n; i++) {
+            spendings[i] = Integer.parseInt(br.readLine());
+        }
+        int money = binarySearch(m);
+        bw.write(String.valueOf(money));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
     static int[] budgets;
 
     static int getCount(int money) {
