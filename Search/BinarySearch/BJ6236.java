@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class BJ6236 {
     /*
     * 2026.01.28 개인 문제 풀이, 틀림
+    * TODO : 반례 케이스 디깅해보기
     *  static int[] spendings;
 
     static int binarySearch(int m) {
