@@ -4,6 +4,38 @@ import java.io.*;
 import java.util.Arrays;
 
 public class BJ2293 {
+    /*
+    * 2026.01.31 개인 문제 풀이, 40분, 못 품
+    *  public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int k = info[1];
+        int[] arr = new int[n];
+        int[] dp = new int[k + 1];
+        for (int i = 0; i < n; i++) {
+            int num = Integer.parseInt(br.readLine());
+            arr[i] = num;
+            dp[num] = 1;
+        }
+        for (int i = 0; i < n; i++) {
+            int num = arr[i];
+            for (int j = 1; j <= k; j++) {
+                if (j < num) {
+                    continue;
+                }
+                dp[j] += dp[num] * dp[j - num];
+            }
+
+        }
+
+
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
 
     static int[] dp;
 
