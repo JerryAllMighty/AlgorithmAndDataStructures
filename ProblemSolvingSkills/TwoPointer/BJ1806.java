@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.Arrays;
 
 public class BJ1806 {
+    // TODO: 이분탐색이나 누적합이 아닌 투포인터로 문제를 푸는 방법을 숙지하기
     /*
     * 2026.02.02 개인 문제 풀이, 시간 초과
     *public static void main(String[] args) throws IOException {
