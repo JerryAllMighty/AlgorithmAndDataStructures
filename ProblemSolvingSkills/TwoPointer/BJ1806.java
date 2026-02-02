@@ -4,6 +4,39 @@ import java.io.*;
 import java.util.Arrays;
 
 public class BJ1806 {
+    /*
+    * 2026.02.02 개인 문제 풀이, 시간 초과
+    *public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int s = info[1];
+        int[] arr = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int answer = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            int currentSum = arr[i];
+            for (int j = i + 1; j < n; j++) {
+                int compareNumber = arr[j];
+                if (currentSum + compareNumber < s) {
+                    currentSum += compareNumber;
+                } else {
+                    answer = Math.min(answer, j - i + 1);
+                    break;
+                }
+            }
+        }
+
+        if (answer == Integer.MAX_VALUE) {
+            bw.write(String.valueOf(0));
+        } else {
+            bw.write(String.valueOf(answer));
+        }
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
