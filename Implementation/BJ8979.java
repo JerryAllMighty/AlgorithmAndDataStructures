@@ -5,6 +5,86 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class BJ8979 {
+    /*
+    * n2026.02.12  개인 풀이, 부분 통과, 20점
+    *   static class Grades {
+
+        private int country;
+        private int gold;
+        private int silver;
+        private int bronze;
+
+        public Grades(int country, int gold, int silver, int bronze) {
+            this.country = country;
+            this.gold = gold;
+            this.silver = silver;
+            this.bronze = bronze;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Grades grades = (Grades) o;
+            return gold == grades.gold && silver == grades.silver && bronze == grades.bronze;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(gold, silver, bronze);
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int k = info[1];
+        Grades[] arr = new Grades[n];
+        for (int i = 0; i < n; i++) {
+            int[] medals = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            arr[i] = new Grades(medals[0], medals[1], medals[2], medals[3]);
+        }
+
+        Arrays.sort(arr, new Comparator<Grades>() {
+            @Override
+            public int compare(Grades o1, Grades o2) {
+                if (o1.gold == o2.gold) {
+                    if (o2.silver == o1.silver) {
+                        return o2.bronze - o1.bronze;
+                    }
+                    return o2.silver - o1.silver;
+                }
+                return o2.gold - o1.gold;
+            }
+        });
+        int rank = 1;
+        int index = 0;
+        boolean isContinousSame = false;
+        while (index < n - 1) {
+            Grades currentGrade = arr[index];
+            Grades nextGrade = arr[++index];
+            if (currentGrade.country == k) {
+                break;
+            }
+            if (!currentGrade.equals(nextGrade)) {
+                if (isContinousSame) {
+                    isContinousSame = false;
+                    rank = ++index;
+                } else {
+                    rank++;
+                }
+            } else {
+                isContinousSame = true;
+            }
+        }
+        bw.write(String.valueOf(rank));
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+     */
     static class Nation {
         private int nationNumber;
         private int goldMedalCount;
