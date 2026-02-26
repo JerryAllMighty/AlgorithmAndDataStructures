@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ea47237-b4ca-4453-9189-9558a31ecd9a" name="변경" comment="BJ 4458 일시 주석 처리">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AlgorithmAndDataStructures.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/JavaCompile.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/BJ10171.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ10171.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/BJ1330.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ1330.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/BJ25206.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ25206.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/BJ2884.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ2884.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/BJ3273.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ3273.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementation/String/BJ13223.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/String/BJ13223.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/build/classes/java/main/com/main/javacompile/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/build/libs/JavaCompile-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/out/production/classes/com/main/javacompile/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinearDataStructure/Array/BJ10431.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructure/Array/BJ10431.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinearDataStructure/PriorityQueue/BJ1966.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructure/PriorityQueue/BJ1966.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search/DFS/BJ1260.java" beforeDir="false" afterPath="$PROJECT_DIR$/Search/DFS/BJ1260.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/JavaCompile">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/main">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/JavaCompile">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaCompile" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaCompile" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaCompile" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JavaCompile" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JerryAllMighty&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JerryAllMighty/AlgorithmAndDataStructures.git&quot;,
+    &quot;accountId&quot;: &quot;455cc552-eb06-4ca4-bc69-70c813ccf1e4&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ytHpxPAuxHvhb38IJ4rCA750RL" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [buildDependents].executor": "Run",
+    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [build].executor": "Run",
+    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [clean].executor": "Run",
+    "Gradle.JavaCompile [:Main.main()].executor": "Debug",
+    "Gradle.JavaCompile [build].executor": "Run",
+    "Gradle.JavaCompile [clean].executor": "Run",
+    "JUnit.MainTest.test (1).executor": "Run",
+    "JUnit.MainTest.test.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/ProjectSource/AlgorithmAndDataStructures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/ProjectSource/AlgorithmAndDataStructures/src/Main.java",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43218392",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.excludes",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.BJ2156.executor": "Run",
+    "애플리케이션.BJ2960.executor": "Run",
+    "애플리케이션.LC345.executor": "Run",
+    "애플리케이션.Main (1).executor": "Run",
+    "애플리케이션.Main (2).executor": "Run",
+    "애플리케이션.Main (3).executor": "Debug",
+    "애플리케이션.Main (4).executor": "Run",
+    "애플리케이션.Main (5).executor": "Run",
+    "애플리케이션.Main.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.main.javacompile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\NonLinearDataStructure\HashTable" />
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\NonLinearDataStructure\Tree\BinaryTree" />
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\Implementation\String" />
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\LinearDataStructure\Stack" />
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\Sort" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.main.javacompile" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.main.javacompile" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.main.javacompile" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AlgorithmAndDataStructures" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="1ea47237-b4ca-4453-9189-9558a31ecd9a" name="변경" comment="" />
+      <created>1750647137031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750647137031</updated>
+      <workItem from="1750647138379" duration="7202000" />
+      <workItem from="1750730081660" duration="597000" />
+      <workItem from="1750819467530" duration="5268000" />
+      <workItem from="1750835490584" duration="337000" />
+      <workItem from="1750900129422" duration="6573000" />
+      <workItem from="1750987595280" duration="1195000" />
+      <workItem from="1750996011339" duration="364000" />
+      <workItem from="1751163411814" duration="610000" />
+      <workItem from="1751630986141" duration="610000" />
+      <workItem from="1751714922656" duration="11000" />
+      <workItem from="1752295804819" duration="14213000" />
+      <workItem from="1752316861074" duration="4411000" />
+      <workItem from="1752322254964" duration="926000" />
+      <workItem from="1752323614022" duration="340000" />
+      <workItem from="1752495358628" duration="12000" />
+      <workItem from="1752838925239" duration="24000" />
+      <workItem from="1752883752239" duration="7408000" />
+      <workItem from="1752919147483" duration="8044000" />
+      <workItem from="1752967635283" duration="12892000" />
+      <workItem from="1753492469203" duration="1239000" />
+      <workItem from="1753589735987" duration="18490000" />
+      <workItem from="1754203636458" duration="25000" />
+      <workItem from="1757129066013" duration="2480000" />
+      <workItem from="1757153543591" duration="3785000" />
+      <workItem from="1757161206441" duration="2128000" />
+      <workItem from="1757221734745" duration="5521000" />
+      <workItem from="1759830176604" duration="4618000" />
+      <workItem from="1761442493416" duration="18977000" />
+      <workItem from="1761522105545" duration="11360000" />
+      <workItem from="1761610209403" duration="9490000" />
+      <workItem from="1761652122619" duration="17000" />
+      <workItem from="1761700289047" duration="5368000" />
+      <workItem from="1761713162637" duration="1163000" />
+      <workItem from="1761783434082" duration="12419000" />
+      <workItem from="1761876081685" duration="9928000" />
+      <workItem from="1761891704036" duration="10000" />
+      <workItem from="1761947326814" duration="2222000" />
+      <workItem from="1761968011312" duration="86000" />
+      <workItem from="1762046150504" duration="21576000" />
+      <workItem from="1762088515082" duration="1226000" />
+      <workItem from="1762124816717" duration="13730000" />
+      <workItem from="1762152001859" duration="54000" />
+      <workItem from="1762217713404" duration="10655000" />
+      <workItem from="1762261198527" duration="82000" />
+      <workItem from="1762308671930" duration="4770000" />
+      <workItem from="1762339123316" duration="10000" />
+      <workItem from="1762392644443" duration="10038000" />
+      <workItem from="1762403740984" duration="609000" />
+      <workItem from="1762479357854" duration="9708000" />
+      <workItem from="1762567859326" duration="6495000" />
+      <workItem from="1762821395226" duration="13575000" />
+      <workItem from="1762915716704" duration="9126000" />
+      <workItem from="1762990445946" duration="6203000" />
+      <workItem from="1763011617983" duration="130000" />
+      <workItem from="1763080272140" duration="10344000" />
+      <workItem from="1763165413066" duration="11598000" />
+      <workItem from="1763183060760" duration="6000" />
+      <workItem from="1763278690354" duration="9995000" />
+      <workItem from="1763337743215" duration="11574000" />
+      <workItem from="1763432102213" duration="5515000" />
+      <workItem from="1763510767266" duration="8774000" />
+      <workItem from="1763597153935" duration="8061000" />
+      <workItem from="1763616587920" duration="5000" />
+      <workItem from="1763685060749" duration="8130000" />
+      <workItem from="1763768583731" duration="9786000" />
+      <workItem from="1763900385004" duration="178000" />
+      <workItem from="1763945184257" duration="1759000" />
+      <workItem from="1763967515303" duration="11079000" />
+      <workItem from="1764034861736" duration="5313000" />
+      <workItem from="1764071461242" duration="5108000" />
+      <workItem from="1764077200722" duration="37000" />
+      <workItem from="1764126379752" duration="3767000" />
+      <workItem from="1764241448967" duration="3482000" />
+      <workItem from="1764288760365" duration="12162000" />
+      <workItem from="1764339486853" duration="631000" />
+      <workItem from="1764388288224" duration="17954000" />
+      <workItem from="1764467023032" duration="2055000" />
+      <workItem from="1764469120149" duration="5622000" />
+      <workItem from="1764561160777" duration="9108000" />
+      <workItem from="1764642191325" duration="4348000" />
+      <workItem from="1764669318321" duration="1452000" />
+      <workItem from="1764729841867" duration="5722000" />
+      <workItem from="1764848780465" duration="8000" />
+      <workItem from="1764901125958" duration="2662000" />
+      <workItem from="1764919958764" duration="1289000" />
+      <workItem from="1764997556061" duration="1391000" />
+      <workItem from="1765018058883" duration="3920000" />
+      <workItem from="1765159671804" duration="18452000" />
+      <workItem from="1765240013962" duration="7316000" />
+      <workItem from="1765266263264" duration="646000" />
+      <workItem from="1765365923761" duration="6352000" />
+      <workItem from="1765423112221" duration="6339000" />
+      <workItem from="1765509249948" duration="4830000" />
+      <workItem from="1765525832311" duration="50000" />
+      <workItem from="1765542694475" duration="1764000" />
+      <workItem from="1765593643284" duration="5635000" />
+      <workItem from="1765612281449" duration="630000" />
+      <workItem from="1765618638692" duration="839000" />
+      <workItem from="1765691834868" duration="2904000" />
+      <workItem from="1765785002142" duration="7091000" />
+      <workItem from="1765836410771" duration="6041000" />
+      <workItem from="1765972726977" duration="601000" />
+      <workItem from="1766010614809" duration="3856000" />
+      <workItem from="1766022515130" duration="8947000" />
+      <workItem from="1766097382308" duration="4470000" />
+      <workItem from="1766196403592" duration="2551000" />
+      <workItem from="1766358344179" duration="20423000" />
+      <workItem from="1766402129457" duration="16000" />
+      <workItem from="1766658546367" duration="4184000" />
+      <workItem from="1766893674291" duration="21000" />
+      <workItem from="1767176384173" duration="1348000" />
+      <workItem from="1767235975221" duration="7000" />
+      <workItem from="1767353811602" duration="8600000" />
+      <workItem from="1767520888949" duration="53000" />
+      <workItem from="1768369057916" duration="8481000" />
+      <workItem from="1768380019657" duration="60000" />
+      <workItem from="1768442621723" duration="8793000" />
+      <workItem from="1768452408316" duration="605000" />
+      <workItem from="1768532007657" duration="5374000" />
+      <workItem from="1768787292090" duration="8287000" />
+      <workItem from="1768901056120" duration="6000" />
+      <workItem from="1769052298153" duration="6241000" />
+      <workItem from="1769134477275" duration="7417000" />
+      <workItem from="1769398065518" duration="8336000" />
+      <workItem from="1769484597103" duration="6093000" />
+      <workItem from="1769576185680" duration="7325000" />
+      <workItem from="1769820631619" duration="6913000" />
+      <workItem from="1769999625569" duration="6405000" />
+      <workItem from="1770260408324" duration="5188000" />
+      <workItem from="1770349811147" duration="4417000" />
+      <workItem from="1770860047882" duration="7987000" />
+      <workItem from="1772141793227" duration="184000" />
+      <workItem from="1772148577474" duration="879000" />
+      <workItem from="1772149473149" duration="831000" />
+    </task>
+    <task id="LOCAL-00076" summary="[Stack] BJ4949 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765182000066</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1765182000066</updated>
+    </task>
+    <task id="LOCAL-00077" summary="[Stack] BJ10799 문제 풀이 추가 (개인 문제 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1765195319423</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1765195319423</updated>
+    </task>
+    <task id="LOCAL-00078" summary="[Recursive] BJ15654 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765244103178</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1765244103178</updated>
+    </task>
+    <task id="LOCAL-00079" summary="[Recursive] BJ15655 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765248180822</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1765248180822</updated>
+    </task>
+    <task id="LOCAL-00080" summary="[Recursive] BJ15655 문제 풀이 추가 (정답 코드, 속도 개선)">
+      <option name="closed" value="true" />
+      <created>1765250996258</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1765250996259</updated>
+    </task>
+    <task id="LOCAL-00081" summary="[Recursive] BJ11725 문제 풀이 추가 (정답 코드, 통과 못 함)">
+      <option name="closed" value="true" />
+      <created>1765375926209</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1765375926210</updated>
+    </task>
+    <task id="LOCAL-00082" summary="[Recursive] BJ1182 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765463558922</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1765463558923</updated>
+    </task>
+    <task id="LOCAL-00083" summary="[Recursive] BJ6603 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765512621395</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1765512621395</updated>
+    </task>
+    <task id="LOCAL-00084" summary="[Recursive] BJ1987 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1765598082321</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1765598082321</updated>
+    </task>
+    <task id="LOCAL-00085" summary="[Recursive] BJ1629 문제 풀이 추가 (개인 풀이, 통과 못함, 메모리 제한)">
+      <option name="closed" value="true" />
+      <created>1765843861625</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1765843861625</updated>
+    </task>
+    <task id="LOCAL-00086" summary="[Heap] BJ11279 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1766362128340</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1766362128341</updated>
+    </task>
+    <task id="LOCAL-00087" summary="[Heap] BJ1927 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1766385559658</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1766385559658</updated>
+    </task>
+    <task id="LOCAL-00088" summary="[TopologySort] BJ2252 문제 풀이 추가 (정답 코드)">
+      <option name="closed" value="true" />
+      <created>1766667839772</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1766667839773</updated>
+    </task>
+    <task id="LOCAL-00089" summary="[TopologySort] BJ2252 문제 풀이 추가 (개인 풀이, 메모리 초과)">
+      <option name="closed" value="true" />
+      <created>1767360674537</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1767360674537</updated>
+    </task>
+    <task id="LOCAL-00090" summary="[TopologySort] BJ2252 문제 풀이 추가 (정답 풀이)">
+      <option name="closed" value="true" />
+      <created>1767362877240</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1767362877240</updated>
+    </task>
+    <task id="LOCAL-00091" summary="[String] BJ2744 문제 풀이 완료">
+      <option name="closed" value="true" />
+      <created>1768369595538</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1768369595539</updated>
+    </task>
+    <task id="LOCAL-00092" summary="[String] BJ1919 문제 풀이 완료">
+      <option name="closed" value="true" />
+      <created>1768370807214</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1768370807214</updated>
+    </task>
+    <task id="LOCAL-00093" summary="[String] BJ1919 문제 풀이 완료">
+      <option name="closed" value="true" />
+      <created>1768370817179</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1768370817179</updated>
+    </task>
+    <task id="LOCAL-00094" summary="[String] BJ1157 문제 풀이 완료">
+      <option name="closed" value="true" />
+      <created>1768373979167</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1768373979167</updated>
+    </task>
+    <task id="LOCAL-00095" summary="[String] BJ1543 문제 풀이 완료">
+      <option name="closed" value="true" />
+      <created>1768375114504</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1768375114505</updated>
+    </task>
+    <task id="LOCAL-00096" summary="파일 정리 : 구현 &gt; String 폴더로 이동">
+      <option name="closed" value="true" />
+      <created>1768378493321</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1768378493321</updated>
+    </task>
+    <task id="LOCAL-00097" summary="[String] BJ1157 이전 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1768378516884</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1768378516884</updated>
+    </task>
+    <task id="LOCAL-00098" summary="[String] BJ 1919 이전 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1768378532305</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1768378532305</updated>
+    </task>
+    <task id="LOCAL-00099" summary="파일 확장자 변경">
+      <option name="closed" value="true" />
+      <created>1768378560218</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1768378560218</updated>
+    </task>
+    <task id="LOCAL-00100" summary="[Implementation] BJ 2960 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1768451059821</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1768451059821</updated>
+    </task>
+    <task id="LOCAL-00101" summary="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1768451069703</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1768451069703</updated>
+    </task>
+    <task id="LOCAL-00102" summary="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1768451079761</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1768451079761</updated>
+    </task>
+    <task id="LOCAL-00103" summary="[DP] BJ 11727 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1768535895278</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1768535895279</updated>
+    </task>
+    <task id="LOCAL-00104" summary="[Array] BJ 10431 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1768794099608</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1768794099608</updated>
+    </task>
+    <task id="LOCAL-00105" summary="[Array] BJ 3273 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1768795049413</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1768795049413</updated>
+    </task>
+    <task id="LOCAL-00106" summary="[Implementation] BJ 1748 문제 풀이 추가 (개인 풀이, 통과 완료)">
+      <option name="closed" value="true" />
+      <created>1769054289645</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1769054289645</updated>
+    </task>
+    <task id="LOCAL-00107" summary="[Implementation] BJ 2491 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1769057893817</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1769057893818</updated>
+    </task>
+    <task id="LOCAL-00108" summary="[DP] BJ 2294 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1769138910072</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1769138910072</updated>
+    </task>
+    <task id="LOCAL-00109" summary="[DP] BJ 2156 문제 풀이 추가 (개인 풀이, 통과 못함)">
+      <option name="closed" value="true" />
+      <created>1769141413196</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1769141413196</updated>
+    </task>
+    <task id="LOCAL-00110" summary="feat(Sort): BJ 18870 문제 풀이 추가&#10; - 개인 풀이, 통과 완료">
+      <option name="closed" value="true" />
+      <created>1769410840440</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1769410840440</updated>
+    </task>
+    <task id="LOCAL-00111" summary="feat(Sort): BJ 1302 문제 풀이 추가&#10; - 개인 풀이, 통과 못함">
+      <option name="closed" value="true" />
+      <created>1769411671633</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1769411671633</updated>
+    </task>
+    <task id="LOCAL-00112" summary="feat(Prefix Sum): BJ 11659 문제 풀이 추가&#10; - 개인 풀이, 통과 완료">
+      <option name="closed" value="true" />
+      <created>1769485956598</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1769485956599</updated>
+    </task>
+    <task id="LOCAL-00113" summary="feat(Prefix Sum): BJ 16713 문제 풀이 추가&#10; - 개인 풀이, 통과 완료">
+      <option name="closed" value="true" />
+      <created>1769490193634</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1769490193634</updated>
+    </task>
+    <task id="LOCAL-00114" summary="feat(binarySearch): BJ 6236 문제 풀이 추가&#10; - 개인 풀이, 틀림">
+      <option name="closed" value="true" />
+      <created>1769580576565</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1769580576566</updated>
+    </task>
+    <task id="LOCAL-00115" summary="feat(binarySearch): BJ 2110 문제 풀이 추가&#10; - 개인 풀이, 테스트 케이스 통과 못함">
+      <option name="closed" value="true" />
+      <created>1769583052377</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1769583052377</updated>
+    </task>
+    <task id="LOCAL-00116" summary="feat(binarySearch): BJ 6236 문제 풀이 추가&#10; - TODO 추가">
+      <option name="closed" value="true" />
+      <created>1769584452084</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1769584452084</updated>
+    </task>
+    <task id="LOCAL-00117" summary="feat(DP): BJ 2293 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1769825571845</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1769825571845</updated>
+    </task>
+    <task id="LOCAL-00118" summary="feat(TwoPointer): BJ 1806 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770008765957</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1770008765958</updated>
+    </task>
+    <task id="LOCAL-00119" summary="feat(TwoPointer): BJ 1806 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770009809547</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1770009809547</updated>
+    </task>
+    <task id="LOCAL-00120" summary="feat(Implementation): BJ 2085 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770264579290</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1770264579291</updated>
+    </task>
+    <task id="LOCAL-00121" summary="feat(dp): BJ 2294 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770353400259</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1770353400259</updated>
+    </task>
+    <task id="LOCAL-00122" summary="feat(List): BJ 1406 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770875284495</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1770875284495</updated>
+    </task>
+    <task id="LOCAL-00123" summary="feat(Implementation): BJ 8979 문제 풀이 추가">
+      <option name="closed" value="true" />
+      <created>1770875297503</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1770875297503</updated>
+    </task>
+    <task id="LOCAL-00124" summary="BJ 4458 일시 주석 처리">
+      <option name="closed" value="true" />
+      <created>1772148857183</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1772148857183</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="파일 확장자 변경" />
+    <MESSAGE value="[Implementation] BJ 2960 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 못함)" />
+    <MESSAGE value="[DP] BJ 11727 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Array] BJ 10431 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Array] BJ 3273 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Implementation] BJ 1748 문제 풀이 추가 (개인 풀이, 통과 완료)" />
+    <MESSAGE value="[Implementation] BJ 2491 문제 풀이 추가 (개인 풀이, 통과 못함)" />
+    <MESSAGE value="[DP] BJ 2294 문제 풀이 추가 (개인 풀이, 통과 못함)" />
+    <MESSAGE value="[DP] BJ 2156 문제 풀이 추가 (개인 풀이, 통과 못함)" />
+    <MESSAGE value="feat(Sort): BJ 18870 문제 풀이 추가&#10; - 개인 풀이, 통과 완료" />
+    <MESSAGE value="feat(Sort): BJ 1302 문제 풀이 추가&#10; - 개인 풀이, 통과 못함" />
+    <MESSAGE value="feat(Prefix Sum): BJ 11659 문제 풀이 추가&#10; - 개인 풀이, 통과 완료" />
+    <MESSAGE value="feat(Prefix Sum): BJ 16713 문제 풀이 추가&#10; - 개인 풀이, 통과 완료" />
+    <MESSAGE value="feat(binarySearch): BJ 6236 문제 풀이 추가&#10; - 개인 풀이, 틀림" />
+    <MESSAGE value="feat(binarySearch): BJ 2110 문제 풀이 추가&#10; - 개인 풀이, 테스트 케이스 통과 못함" />
+    <MESSAGE value="feat(binarySearch): BJ 6236 문제 풀이 추가&#10; - TODO 추가" />
+    <MESSAGE value="feat(DP): BJ 2293 문제 풀이 추가" />
+    <MESSAGE value="feat(TwoPointer): BJ 1806 문제 풀이 추가" />
+    <MESSAGE value="feat(Implementation): BJ 2085 문제 풀이 추가" />
+    <MESSAGE value="feat(dp): BJ 2294 문제 풀이 추가" />
+    <MESSAGE value="feat(List): BJ 1406 문제 풀이 추가" />
+    <MESSAGE value="feat(Implementation): BJ 8979 문제 풀이 추가" />
+    <MESSAGE value="BJ 4458 일시 주석 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="BJ 4458 일시 주석 처리" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProblemSolvingSkills/PrefixSum/BJ16713.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProblemSolvingSkills/PrefixSum/BJ16713.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Implementation/BJ1748.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Implementation/BJ1748.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="frequencies" language="JAVA" />
+        <watch expression="frequencies" language="JAVA" />
+        <watch expression="frequencies[33]" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
