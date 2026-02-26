@@ -2,7 +2,7 @@ package Implementation;
 
 import java.util.Scanner;
 
-public class Test {
+public class BJ2884 {
     public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hour = sc.nextInt();

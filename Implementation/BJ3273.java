@@ -3,7 +3,7 @@ package Implementation;
 import java.util.Scanner;
 
 
-public class Test{
+public class BJ3273{
 
   public static void Test(String[] args) {
     Scanner sc = new Scanner(System.in);

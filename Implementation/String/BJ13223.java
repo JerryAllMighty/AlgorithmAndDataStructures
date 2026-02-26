@@ -1,11 +1,6 @@
 package Implementation.String;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
-
-
+/*
 public class Test {
     public static void Test(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -56,6 +51,7 @@ public class Test {
 
     }
 }
+*/
 
 //2025.10.26
 //package com.main.javacompile;

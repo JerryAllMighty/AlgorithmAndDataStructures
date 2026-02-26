@@ -36,8 +36,6 @@ public class BJ25206 {
                 double targetNumber = score * grades.get(grade);
                 answer += targetNumber;
             }
-
-
         }
         bw.write(String.valueOf(answer / totalScore));
         bw.flush();

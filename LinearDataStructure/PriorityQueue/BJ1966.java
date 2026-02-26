@@ -1,9 +1,8 @@
 package LinearDataStructure.PriorityQueue;
 
-import java.util.*;
-
-public class Test {
-    public static void Test(String[] args) {
+public class BJ1966 {
+    /*
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
@@ -50,4 +49,6 @@ public class Test {
             System.out.println(answer);
         }
     }
+
+     */
 }

@@ -1,14 +1,14 @@
 package LinearDataStructure.Array;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BJ10431 {
     static int getCount(int[] arr) {
         int count = 0;
-        List<Integer> sortedArray = new ArrayList<>();
+        List<Integer> sortedArray = new LinkedList<>();
         sortedArray.add(0, arr[1]);
         for (int i = 2; i < arr.length; i++) {
             int targetNumber = arr[i];

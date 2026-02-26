@@ -1,12 +1,8 @@
 package Search.DFS;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class BJ1260 {
 
+    /*
     static int[][] adjacentArray;
     static int v;
 
@@ -77,7 +73,9 @@ public class BJ1260 {
         bw.close();
         br.close();
     }
+*/
 }
+
 
 /* 2025.11.15 2회차 풀이
 * Stack을 활용한 dfs 로직은 순서를 보장하는 부분에 있어서 추가 코드 필요. 
