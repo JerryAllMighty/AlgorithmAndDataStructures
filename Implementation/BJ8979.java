@@ -6,6 +6,92 @@ import java.util.Comparator;
 
 public class BJ8979 {
     /*
+    * 2026.02.27 개인 문제 풀이, 통과 완료
+    * import java.io.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Main {
+    static class CountryGrades {
+        private int countryNumber;
+        private int goldMedalCount;
+        private int silverMedalCount;
+        private int bronzeMedalCount;
+
+        public CountryGrades(int countryNumber, int goldMedalCount, int silverMedalCount, int bronzeMedalCount) {
+            this.countryNumber = countryNumber;
+            this.goldMedalCount = goldMedalCount;
+            this.silverMedalCount = silverMedalCount;
+            this.bronzeMedalCount = bronzeMedalCount;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (o == null || getClass() != o.getClass()) return false;
+            CountryGrades that = (CountryGrades) o;
+            return goldMedalCount == that.goldMedalCount && silverMedalCount == that.silverMedalCount && bronzeMedalCount == that.bronzeMedalCount;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(goldMedalCount, silverMedalCount, bronzeMedalCount);
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int k = info[1];
+        CountryGrades[] countryGrades = new CountryGrades[n];
+        for (int i = 0; i < n; i++) {
+            int[] grade = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            int countryNumber = grade[0];
+            int goldMedalCount = grade[1];
+            int silverMedalCount = grade[2];
+            int bronzeMedalCount = grade[3];
+            countryGrades[i] = new CountryGrades(countryNumber, goldMedalCount, silverMedalCount, bronzeMedalCount);
+        }
+        Arrays.sort(countryGrades, new Comparator<CountryGrades>() {
+            @Override
+            public int compare(CountryGrades o1, CountryGrades o2) {
+                if (o2.goldMedalCount == o1.goldMedalCount) {
+                    if (o2.silverMedalCount == o1.silverMedalCount) {
+                        return o2.bronzeMedalCount - o1.bronzeMedalCount;
+                    }
+                    return o2.silverMedalCount - o1.silverMedalCount;
+                }
+                return o2.goldMedalCount - o1.goldMedalCount;
+            }
+        });
+        for (int i = 0; i < n; i++) {
+            CountryGrades countryGrade = countryGrades[i];
+            if (countryGrade.countryNumber == k) {
+                int sameCount = 1;
+                int index = i - 1;
+                while (index >= 0) {
+                    CountryGrades previousCountryGrade = countryGrades[index];
+                    if (!previousCountryGrade.equals(countryGrade)) {
+                        break;
+                    }
+                    sameCount++;
+                    index--;
+                }
+                //(자신보다 더 잘한 나라 수) + 1로 정의
+                bw.write(String.valueOf(i + 1 - sameCount + 1));
+                break;
+            }
+        }
+        bw.flush();
+        bw.close();
+    }
+}
+*
+*
+     */
+    /*
     * n2026.02.12  개인 풀이, 부분 통과, 20점
     *   static class Grades {
 
