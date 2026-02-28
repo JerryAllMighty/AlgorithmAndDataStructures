@@ -4,55 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ea47237-b4ca-4453-9189-9558a31ecd9a" name="변경" comment="BJ 4458 일시 주석 처리">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AlgorithmAndDataStructures.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/JavaCompile.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/BJ10171.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ10171.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/BJ1330.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ1330.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/BJ25206.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ25206.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/BJ2884.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ2884.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/BJ3273.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/BJ3273.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementation/String/BJ13223.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementation/String/BJ13223.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/8.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/build/classes/java/main/com/main/javacompile/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/build/libs/JavaCompile-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/out/production/classes/com/main/javacompile/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCompile/src/main/java/com/main/javacompile/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinearDataStructure/Array/BJ10431.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructure/Array/BJ10431.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinearDataStructure/PriorityQueue/BJ1966.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructure/PriorityQueue/BJ1966.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search/DFS/BJ1260.java" beforeDir="false" afterPath="$PROJECT_DIR$/Search/DFS/BJ1260.java" afterDir="false" />
+    <list default="true" id="1ea47237-b4ca-4453-9189-9558a31ecd9a" name="변경" comment="feat(String): BJ 9012 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통과 완료">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmAndDataStructures/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmAndDataStructures/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/과일로_만든_아이스크림_고르기.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/과일로_만든_아이스크림_고르기.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,65 +96,66 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [buildDependents].executor": "Run",
-    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [build].executor": "Run",
-    "Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [clean].executor": "Run",
-    "Gradle.JavaCompile [:Main.main()].executor": "Debug",
-    "Gradle.JavaCompile [build].executor": "Run",
-    "Gradle.JavaCompile [clean].executor": "Run",
-    "JUnit.MainTest.test (1).executor": "Run",
-    "JUnit.MainTest.test.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/ProjectSource/AlgorithmAndDataStructures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/ProjectSource/AlgorithmAndDataStructures/src/Main.java",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43218392",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.excludes",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.BJ2156.executor": "Run",
-    "애플리케이션.BJ2960.executor": "Run",
-    "애플리케이션.LC345.executor": "Run",
-    "애플리케이션.Main (1).executor": "Run",
-    "애플리케이션.Main (2).executor": "Run",
-    "애플리케이션.Main (3).executor": "Debug",
-    "애플리케이션.Main (4).executor": "Run",
-    "애플리케이션.Main (5).executor": "Run",
-    "애플리케이션.Main.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.C:/ProjectSource/AlgorithmAndDataStructures/main [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JavaCompile [:Main.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.JavaCompile [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JavaCompile [clean].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.test (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProjectSource/AlgorithmAndDataStructures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/ProjectSource/AlgorithmAndDataStructures/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43218392&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.excludes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.BJ2156.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.BJ2960.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.LC345.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Main (2).executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Main (3).executor&quot;: &quot;Debug&quot;,
+    &quot;애플리케이션.Main (4).executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Main (5).executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.main.javacompile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\SQL" />
       <recent name="C:\ProjectSource\AlgorithmAndDataStructures\NonLinearDataStructure\HashTable" />
       <recent name="C:\ProjectSource\AlgorithmAndDataStructures\NonLinearDataStructure\Tree\BinaryTree" />
       <recent name="C:\ProjectSource\AlgorithmAndDataStructures\Implementation\String" />
       <recent name="C:\ProjectSource\AlgorithmAndDataStructures\LinearDataStructure\Stack" />
-      <recent name="C:\ProjectSource\AlgorithmAndDataStructures\Sort" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -374,39 +333,8 @@
       <workItem from="1770860047882" duration="7987000" />
       <workItem from="1772141793227" duration="184000" />
       <workItem from="1772148577474" duration="879000" />
-      <workItem from="1772149473149" duration="831000" />
-    </task>
-    <task id="LOCAL-00076" summary="[Stack] BJ4949 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
-      <option name="closed" value="true" />
-      <created>1765182000066</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1765182000066</updated>
-    </task>
-    <task id="LOCAL-00077" summary="[Stack] BJ10799 문제 풀이 추가 (개인 문제 풀이, 통과 못함)">
-      <option name="closed" value="true" />
-      <created>1765195319423</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1765195319423</updated>
-    </task>
-    <task id="LOCAL-00078" summary="[Recursive] BJ15654 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
-      <option name="closed" value="true" />
-      <created>1765244103178</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1765244103178</updated>
-    </task>
-    <task id="LOCAL-00079" summary="[Recursive] BJ15655 문제 풀이 추가 (개인 문제 풀이, 통과 완료)">
-      <option name="closed" value="true" />
-      <created>1765248180822</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1765248180822</updated>
+      <workItem from="1772149473149" duration="6871000" />
+      <workItem from="1772241719326" duration="5049000" />
     </task>
     <task id="LOCAL-00080" summary="[Recursive] BJ15655 문제 풀이 추가 (정답 코드, 속도 개선)">
       <option name="closed" value="true" />
@@ -768,7 +696,39 @@
       <option name="project" value="LOCAL" />
       <updated>1772148857183</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="프로젝트 정리">
+      <option name="closed" value="true" />
+      <created>1772150332542</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1772150332543</updated>
+    </task>
+    <task id="LOCAL-00126" summary="프로젝트 정리&#10;- main 클래스 수정">
+      <option name="closed" value="true" />
+      <created>1772150353663</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1772150353663</updated>
+    </task>
+    <task id="LOCAL-00127" summary="feat(String): BJ8979 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통고 완료">
+      <option name="closed" value="true" />
+      <created>1772156721655</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1772156721655</updated>
+    </task>
+    <task id="LOCAL-00128" summary="feat(String): BJ 9012 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통과 완료">
+      <option name="closed" value="true" />
+      <created>1772246944992</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1772246944992</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,10 +746,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="파일 확장자 변경" />
-    <MESSAGE value="[Implementation] BJ 2960 문제 풀이 추가 (개인 풀이, 통과 완료)" />
-    <MESSAGE value="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 완료)" />
-    <MESSAGE value="[Implementation] BJ 25206 문제 풀이 추가 (개인 풀이, 통과 못함)" />
     <MESSAGE value="[DP] BJ 11727 문제 풀이 추가 (개인 풀이, 통과 완료)" />
     <MESSAGE value="[Array] BJ 10431 문제 풀이 추가 (개인 풀이, 통과 완료)" />
     <MESSAGE value="[Array] BJ 3273 문제 풀이 추가 (개인 풀이, 통과 완료)" />
@@ -811,7 +767,11 @@
     <MESSAGE value="feat(List): BJ 1406 문제 풀이 추가" />
     <MESSAGE value="feat(Implementation): BJ 8979 문제 풀이 추가" />
     <MESSAGE value="BJ 4458 일시 주석 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="BJ 4458 일시 주석 처리" />
+    <MESSAGE value="프로젝트 정리" />
+    <MESSAGE value="프로젝트 정리&#10;- main 클래스 수정" />
+    <MESSAGE value="feat(String): BJ8979 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통고 완료" />
+    <MESSAGE value="feat(String): BJ 9012 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통과 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(String): BJ 9012 문제 풀이 추가&#10;- 개인 문제 풀이&#10;- 통과 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
