@@ -1,11 +1,8 @@
-## 의의
+# 의의
 알고리즘과 자료구조 학습과 관련된 기록을 남기기 위한 공간입니다.
-정리된 이론은 벨로그에서 확인 가능합니다.
-(https://velog.io/@dbsalszz/posts?tag=%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
-
-
 ---------------------------------------------------------------------------------
-## Index
+
+# Index
 [선형 자료구조]
 - 배열
 - 연결리스트
@@ -95,17 +92,3 @@
 
 
 [SQL]
----------------------------------------------------------------------------------
-2025.07.12
-Things have changed since this date. I now catogorize every folders with their only their pure algorithms.
-It used to be the algorithm solving site's title.
-
-Each Site's solving history is now merged to it's own algorithm folders.
-And the basic concepts of the Algorithms will be now available on velog.
-(https://velog.io/@dbsalszz/posts)
-
-2025.07.12부로 기존에 Git에서 기본 알고리즘 개념들을 적으며 관리했었던 부분들을 모두 벨로그로 이전했고, 
-깃헙에는 코드만 관리하는 방식으로 관리 예정입니다.
-
-기존의 각 사이트별 풀이는 모두 각 해당하는 알고리즘 폴더 아래로 이동되었습니다.
----------------------------------------------------------------------------------
