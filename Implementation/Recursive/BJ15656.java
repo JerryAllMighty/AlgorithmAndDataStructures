@@ -1,5 +1,5 @@
 /*
- * 2026.03.04
+ * 2026.03.04 개인 문제 풀이, 통과 완료
  * import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;

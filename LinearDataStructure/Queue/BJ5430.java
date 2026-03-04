@@ -1,5 +1,5 @@
 /*
-* 2026.03.02
+* 2026.03.02 개인 문제 풀이, 시간 초과
 * import java.io.*;
 
 public class Main {
