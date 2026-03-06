@@ -7,6 +7,7 @@ import java.util.List;
 public class BJ2156 {
     /*
     * 2026.01.23 개인풀이, 40분, 통과 못 함
+    * 문제 해결 방향 설계 잘못함, 그리디로 접근하면 안됨
     * public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
