@@ -5,7 +5,53 @@ import java.util.Arrays;
 
 public class BJ2294 {
     /*
-     * 2026.03.06 개인 문제 풀이, 4트 , 틀림
+     * 2026.03.06 복기, 통과 완료
+     * import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int[] info = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = info[0];
+        int k = info[1];
+        int[] coins = new int[n];
+        int[] dp = new int[k + 1];
+        for (int i = 1; i <= k; i++) {
+            dp[i] = 100001;
+        }
+        for (int i = 0; i < n; i++) {
+            int coin = Integer.parseInt(br.readLine());
+            coins[i] = coin;
+            if (coin <= k) {
+                dp[coin] = 1;
+            }
+        }
+
+
+        for (int i = 1; i <= k; i++) {
+            for (int j = 0; j < n; j++) {
+                int coin = coins[j];
+                if (i <= coin) {
+                    continue;
+                }
+                dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+            }
+        }
+        if (dp[k] == 100001) {
+            bw.write(String.valueOf(-1));
+        } else {
+            bw.write(String.valueOf(dp[k]));
+        }
+        bw.flush();
+        bw.close();
+    }
+}
+     */
+    /*
+     * 2026.03.06 개인 문제 풀이, 4트 , 틀림,
+     * dp 초기화하는 부분 생각 못함, 그리고 값을 만들 수 없으면 -1로 만들어주는 부분 생각 못함
      * import java.io.*;
 import java.util.Arrays;
 
