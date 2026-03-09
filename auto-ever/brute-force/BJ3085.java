@@ -8,7 +8,7 @@ public class Main {
     static int n;
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
-    static String[][] board;
+    static char[][] board;
 
     static boolean isValid(int x, int y) {
         return x >= 0 && x < n && y >= 0 && y < n;
@@ -21,15 +21,15 @@ public class Main {
             int rowCount = 1;
             int columnCount = 1;
             for (int j = 0; j < n - 1; j++) {
-                if (board[i][j].equals(board[i][j + 1])) {
+                if (board[i][j] == (board[i][j + 1])) {
                     rowCount++;
-                }else {
+                } else {
                     rowCountMax = Math.max(rowCountMax, rowCount);
                     rowCount = 1;
                 }
-                if (board[j][i].equals(board[j + 1][i])) {
+                if (board[j][i] == (board[j + 1][i])) {
                     columnCount++;
-                }else{
+                } else {
                     columnCountMax = Math.max(columnCountMax, columnCount);
                     columnCount = 1;
                 }
@@ -41,7 +41,7 @@ public class Main {
     }
 
     static void swap(int i, int j, int x, int y) {
-        String before = board[i][j];
+        char before = board[i][j];
         board[i][j] = board[x][y];
         board[x][y] = before;
     }
@@ -50,9 +50,9 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         n = Integer.parseInt(br.readLine());
-        board = new String[n][];
+        board = new char[n][];
         for (int i = 0; i < n; i++) {
-            String[] row = br.readLine().split("");
+            char[] row = br.readLine().toCharArray();
             board[i] = row;
         }
 
@@ -76,6 +76,5 @@ public class Main {
         bw.close();
     }
 }
-
 
  */
