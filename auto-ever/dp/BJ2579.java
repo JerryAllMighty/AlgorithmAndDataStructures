@@ -14,15 +14,14 @@ public class Main {
             stairs[i] = stair;
         }
         //직전 값을 안 밟고 가는 경우, 밟고 가는 경우
-        int[][] dp = new int[n + 1][];
-        dp[0] = new int[]{stairs[0], stairs[0]};
-        dp[1] = new int[]{stairs[1], stairs[1]};
+        int[][] dp = new int[Math.max(3, n + 1)][2];
+        dp[0] = new int[]{0, 0};
+        dp[1] = new int[]{stairs[1], 0};
         for (int i = 2; i <= n; i++) {
             //직전을 안 밟는 경우
-            int previousUnStepped = Math.max(dp[i - 2][0], dp[i - 2][1]) + stairs[i];
+            dp[i][0] = Math.max(dp[i - 2][0], dp[i - 2][1]) + stairs[i];
             //직전을 밟는 경우
-            int previousStepped = dp[i - 1][0] + stairs[i];
-            dp[i] = new int[]{previousUnStepped, previousStepped};
+            dp[i][1] = dp[i - 1][0] + stairs[i];
         }
         int answer = Math.max(dp[n][0], dp[n][1]);
         bw.write(String.valueOf(answer));
@@ -30,6 +29,8 @@ public class Main {
         bw.close();
     }
 }
+
+
 
 
  */
