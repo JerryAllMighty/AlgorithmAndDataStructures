@@ -12,7 +12,7 @@ public class Main {
         int m = Integer.parseInt(stringTokenizer.nextToken());
         int[] inDegree = new int[n + 1];
         List<Integer>[] adjacentArray = new List[n + 1];
-        for (int i = 0; i < n + 1; i++) {
+        for (int i = 1; i <= n; i++) {
             adjacentArray[i] = new ArrayList<>();
         }
         for (int i = 0; i < m; i++) {
@@ -32,7 +32,8 @@ public class Main {
         }
         while (!queue.isEmpty()) {
             int number = queue.poll();
-            stringBuilder.append(String.valueOf(number) + " ");
+            stringBuilder.append(String.valueOf(number));
+            stringBuilder.append(" ");
             for (int i : adjacentArray[number]) {
                 if (--inDegree[i] == 0) {
                     queue.add(i);
@@ -44,6 +45,9 @@ public class Main {
         bw.close();
     }
 }
+
+
+
 
 
 
