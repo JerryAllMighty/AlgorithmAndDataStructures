@@ -1,4 +1,123 @@
 /*
+ * 2026 04 02 복기하다 말음 집중 너무 안 돼 미쳐버려
+ * import java.io.*;
+import java.util.*;
+
+public class Main {
+    static int n;
+    static int m;
+    static int[][] grounds;
+    static int[] dx = {-1, 0, 1, 0};
+    static int[] dy = {0, 1, 0, -1};
+    static int answer;
+
+    static int countSafeArea() {
+        int result = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (grounds[i][j] == 0) {
+                    result++;
+                }
+            }
+        }
+        return result;
+    }
+
+    static boolean[][] visited = new boolean[n][m];
+
+    static void spreadVirus(int x, int y) {
+        visited = new boolean[n][m];
+        Queue<int[]> queue = new ArrayDeque<>();
+        queue.add(new int[]{x, y});
+        while (!queue.isEmpty()) {
+            int[] current = queue.poll();
+            int row = current[0];
+            int col = current[1];
+            grounds[row][col] = 2;
+
+            for (int k = 0; k < 4; k++) {
+                int nx = row + dx[k];
+                int ny = col + dy[k];
+                if (nx >= 0 && nx < n && ny >= 0 && ny < m
+                        && grounds[nx][ny] == 0
+                        && !visited[nx][ny]) {
+                    queue.add(new int[]{nx, ny});
+                    visited[nx][ny] = true;
+                }
+
+            }
+        }
+    }
+
+    static void search() {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (grounds[i][j] == 0) {
+                    makeWall(i, j);
+                }
+            }
+        }
+
+    }
+
+    static boolean[][] wallVisited = new boolean[n][m];
+
+    static void makeWall(int x, int y) {
+        wallVisited = new boolean[n][m];
+        Queue<int[]> queue = new ArrayDeque<>();
+        queue.add(new int[]{x, y});
+        while (!queue.isEmpty()) {
+            int[] current = queue.poll();
+            int row = current[0];
+            int col = current[1];
+            grounds[row][col] = 1;
+
+            for (int k = 0; k < 4; k++) {
+                int nx = row + dx[k];
+                int ny = col + dy[k];
+                if (nx >= 0 && nx < n && ny >= 0 && ny < m
+                        && grounds[nx][ny] == 0
+                        && !wallVisited[nx][ny]) {
+                    queue.add(new int[]{nx, ny});
+                    wallVisited[nx][ny] = true;
+                }
+
+            }
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
+        n = Integer.parseInt(stringTokenizer.nextToken());
+        m = Integer.parseInt(stringTokenizer.nextToken());
+        grounds = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            stringTokenizer = new StringTokenizer(br.readLine());
+            int[] row = new int[m];
+            for (int j = 0; j < m; j++) {
+                int number = Integer.parseInt(stringTokenizer.nextToken());
+                row[j] = number;
+            }
+            grounds[i] = row;
+        }
+
+        search();
+
+        bw.write(String.valueOf(answer));
+        bw.flush();
+        bw.close();
+    }
+}
+
+
+
+
+
+
+ */
+/*
  * 20260325 컨디션 난조, 복기 하다가 말음
  * import java.io.*;
 import java.util.*;
