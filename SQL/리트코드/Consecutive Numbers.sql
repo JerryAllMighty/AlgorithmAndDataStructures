@@ -15,6 +15,6 @@ with recursive cte as (
     inner join Logs l on l.id = c.id + 1
 )
 
-select num as ConsecutiveNums
+select distinct num as ConsecutiveNums
 from cte
 where ConsecutiveNums  >= 3
